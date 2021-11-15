@@ -1,3 +1,6 @@
 [submodule "src/themes/themes/hugo-coder"]
 	path = src/themes/themes/hugo-coder
 	url = https://github.com/luizdepra/hugo-coder.git
+[submodule "ocde/themes/hugo-coder"]
+	path = ocde/themes/hugo-coder
+	url = https://github.com/luizdepra/hugo-coder.git
