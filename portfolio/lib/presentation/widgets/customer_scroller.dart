@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
+
+import '../../values/values.dart';
 
 class CustomScroller extends StatelessWidget {
-  CustomScroller({
+  const CustomScroller({
+    Key? key,
     this.width = Sizes.WIDTH_24,
     this.height = Sizes.HEIGHT_70,
     this.padding = const EdgeInsets.all(Sizes.PADDING_0),
@@ -16,7 +18,7 @@ class CustomScroller extends StatelessWidget {
     this.topController,
     this.centerChild,
     this.bottomController,
-  });
+  }) : super(key: key);
 
   final EdgeInsetsGeometry padding;
   final double width;
@@ -43,7 +45,7 @@ class CustomScroller extends StatelessWidget {
             InkWell(
               onTap: onUpTap,
               child: topController ??
-                  Icon(Icons.keyboard_arrow_up,
+                  const Icon(Icons.keyboard_arrow_up,
                       color: AppColors.secondaryColor),
             ),
             SpaceH8(),
@@ -60,7 +62,7 @@ class CustomScroller extends StatelessWidget {
             InkWell(
               onTap: onDownTap,
               child: bottomController ??
-                  Icon(
+                  const Icon(
                     Icons.keyboard_arrow_down,
                     color: AppColors.secondaryColor,
                   ),

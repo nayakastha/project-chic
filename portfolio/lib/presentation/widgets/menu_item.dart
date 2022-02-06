@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:aerium/presentation/widgets/horizontal_bar.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
 
+import '../../values/values.dart';
 import 'flicker_text_animation.dart';
+import 'horizontal_bar.dart';
 
 class MenuItem extends StatefulWidget {
-  MenuItem({
+  const MenuItem({
+    Key? key,
     required this.title,
     this.titleStyle,
     this.onTap,
     this.selectedStyle,
     this.isMobile = false,
     this.selected = false,
-  });
+  }) : super(key: key);
 
   final String title;
   final TextStyle? titleStyle;
@@ -116,7 +116,7 @@ class _MenuItemState extends State<MenuItem> with TickerProviderStateMixin {
                     ),
                     widget.selected ? SpaceH8() : Container(),
                     widget.selected
-                        ? HorizontalBar(
+                        ? const HorizontalBar(
                             color: AppColors.primaryColor,
                           )
                         : Container(),

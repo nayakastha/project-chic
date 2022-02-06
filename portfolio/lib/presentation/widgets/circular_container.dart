@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../values/values.dart';
 
 class CircularContainer extends StatelessWidget {
-  CircularContainer({
+  const CircularContainer({
+    Key? key,
     this.child,
     this.width = Sizes.WIDTH_40,
     this.height = Sizes.HEIGHT_40,
     this.color = AppColors.primaryColor,
     this.borderRadius,
-  });
+  }) : super(key: key);
 
   final Color color;
   final Widget? child;

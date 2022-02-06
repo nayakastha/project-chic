@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:aerium/presentation/widgets/skill_level.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/presentation/widgets/sub_menu_item.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
+import '../../values/values.dart';
+import 'skill_level.dart';
+import 'sub_menu_item.dart';
+
 class SubMenuList extends StatefulWidget {
-  SubMenuList({
+  const SubMenuList({
+    Key? key,
     required this.subMenuData,
     this.spacing = Sizes.SIZE_8,
     this.runSpacing = Sizes.SIZE_8,
     this.width,
-  });
+  }) : super(key: key);
 
   final List<SubMenuData> subMenuData;
   final double spacing;
@@ -69,7 +70,7 @@ class _SubMenuListState extends State<SubMenuList>
     ).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: Interval(
+        curve: const Interval(
           0.0,
           0.5,
           curve: Curves.easeIn,
@@ -82,7 +83,7 @@ class _SubMenuListState extends State<SubMenuList>
     ).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: Interval(
+        curve: const Interval(
           0.5,
           1.0,
           curve: Curves.easeIn,
@@ -154,10 +155,12 @@ class _SubMenuListState extends State<SubMenuList>
               if (sizingInformation.screenSize.width > 900 &&
                   sizingInformation.screenSize.width < 1170) {
                 return _buildSkillsSection(
-                    skills: menuData[index].skillData!, width: widget.width! / 3);
+                    skills: menuData[index].skillData!,
+                    width: widget.width! / 3);
               }
               return _buildSkillsSection(
-                  skills: menuData[index].skillData!, width: widget.width! / 3.7);
+                  skills: menuData[index].skillData!,
+                  width: widget.width! / 3.7);
             },
           );
         } else {

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
 
-import 'package:aerium/presentation/widgets/horizontal_bar.dart';
-import 'package:aerium/values/values.dart';
+import '../../values/values.dart';
+import 'horizontal_bar.dart';
+import 'spaces.dart';
 
 class PortfolioCard extends StatefulWidget {
-  PortfolioCard({
+  const PortfolioCard({
+    Key? key,
     this.width = 500,
     this.height = 400,
     this.imageUrl,
@@ -20,7 +21,7 @@ class PortfolioCard extends StatefulWidget {
     this.actionTitleTextStyle,
     this.duration = 1000,
     this.onTap,
-  });
+  }) : super(key: key);
 
   final double width;
   final double height;
@@ -72,7 +73,7 @@ class _PortfolioCardState extends State<PortfolioCard>
     ).animate(
       CurvedAnimation(
         parent: _portfolioCoverController,
-        curve: Interval(
+        curve: const Interval(
           0.0,
           1.0,
           curve: Curves.easeIn,
@@ -117,7 +118,7 @@ class _PortfolioCardState extends State<PortfolioCard>
                         color: widget.hoverColor,
                         child: Column(
                           children: [
-                            Spacer(flex: 1),
+                            const Spacer(flex: 1),
                             Text(
                               widget.title!,
                               textAlign: TextAlign.center,
@@ -137,14 +138,16 @@ class _PortfolioCardState extends State<PortfolioCard>
                             ),
                             SpaceH16(),
                             Text(
-                              widget.actionTitleTextStyle as String? ?? widget.actionTitle!,
+                              widget.actionTitleTextStyle as String? ??
+                                  widget.actionTitle!,
                               textAlign: TextAlign.center,
                               style: theme.textTheme.subtitle1!
                                   .copyWith(color: AppColors.secondaryColor),
                             ),
                             SpaceH4(),
-                            HorizontalBar(color: AppColors.secondaryColor),
-                            Spacer(flex: 1),
+                            const HorizontalBar(
+                                color: AppColors.secondaryColor),
+                            const Spacer(flex: 1),
                           ],
                         ),
                       ),

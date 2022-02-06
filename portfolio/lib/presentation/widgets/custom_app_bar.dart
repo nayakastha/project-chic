@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/values/values.dart';
 
+import '../../core/utils/functions.dart';
+import '../../values/values.dart';
 import 'circular_container.dart';
 
 class CustomAppBar extends StatelessWidget {
-  CustomAppBar({
+  const CustomAppBar({
+    Key? key,
     this.title,
+    this.titleTextStyle,
     this.leading,
     this.onLeadingPressed,
     this.actions,
     this.onActionsPressed,
     this.actionIcon,
     this.bottom,
-    this.titleTextStyle,
-  });
+  }) : super(key: key);
 
   final String? title;
   final TextStyle? titleTextStyle;
@@ -46,7 +47,7 @@ class CustomAppBar extends StatelessWidget {
               bottom: Sizes.PADDING_8,
             ),
             onPressed: onLeadingPressed,
-            icon: Icon(
+            icon: const Icon(
               Icons.menu,
               color: AppColors.secondaryColor,
             ),
@@ -65,7 +66,7 @@ class CustomAppBar extends StatelessWidget {
                 height: Sizes.HEIGHT_40,
                 child: InkWell(
                   child: actionIcon ??
-                      Icon(
+                      const Icon(
                         Icons.email,
                         color: AppColors.accentColor2,
                         size: Sizes.ICON_SIZE_20,

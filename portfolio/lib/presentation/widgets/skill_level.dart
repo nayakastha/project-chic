@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/presentation/widgets/skill_progress_painter.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/skill_progress_painter.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
+
+import '../../values/values.dart';
 
 class SkillLevel extends StatelessWidget {
-  SkillLevel({
+  const SkillLevel({
+    Key? key,
     required this.skillLevel,
     required this.skillName,
     this.width,
@@ -15,7 +17,7 @@ class SkillLevel extends StatelessWidget {
     this.duration = const Duration(milliseconds: 500),
     this.progressColor = AppColors.primaryColor,
     this.baseColor = AppColors.cream500,
-  });
+  }) : super(key: key);
 
   final double skillLevel;
   final String skillName;
@@ -32,7 +34,7 @@ class SkillLevel extends StatelessWidget {
   Widget build(BuildContext context) {
     var actualSkillLevel = skillLevel / 10;
     ThemeData theme = Theme.of(context);
-    return Container(
+    return SizedBox(
       width: width,
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -40,7 +42,7 @@ class SkillLevel extends StatelessWidget {
           TweenAnimationBuilder(
             tween: Tween<double>(begin: 0, end: skillLevel),
             duration: duration,
-            child: Container(
+            child: SizedBox(
               width: circleWidth,
               height: circleHeight,
               child: Center(

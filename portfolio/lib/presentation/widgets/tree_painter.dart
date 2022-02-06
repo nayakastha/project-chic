@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../values/values.dart';
 
 class TreePainter extends CustomPainter {
   TreePainter({
@@ -57,13 +58,12 @@ class TreePainter extends CustomPainter {
 
     canvas.drawCircle(center, outerJointRadius, _circlePaint);
 
-    _circlePaint..color = innerJointColor;
+    _circlePaint.color = innerJointColor;
     canvas.drawCircle(center, innerJointRadius, _circlePaint);
   }
 
   @override
   bool shouldRepaint(CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
     return true;
   }
 }

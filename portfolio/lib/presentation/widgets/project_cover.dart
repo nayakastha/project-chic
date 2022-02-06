@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../values/values.dart';
 
 class ProjectCover extends StatelessWidget {
-  ProjectCover({
+  const ProjectCover({
+    Key? key,
     this.width,
     this.height,
     this.offset,
@@ -12,7 +14,7 @@ class ProjectCover extends StatelessWidget {
     this.origin = const Offset(0, 0),
     this.backgroundScale = 1,
     this.projectCoverScale = 1,
-  });
+  }) : super(key: key);
 
   final double? width;
   final double? height;
@@ -26,7 +28,7 @@ class ProjectCover extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: width,
       height: height,
       child: Stack(

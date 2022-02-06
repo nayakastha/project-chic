@@ -1,7 +1,8 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../values/values.dart';
 
 class SkillProgressPainter extends CustomPainter {
   SkillProgressPainter({

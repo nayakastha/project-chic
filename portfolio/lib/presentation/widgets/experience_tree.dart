@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/presentation/widgets/tree_painter.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
+import 'package:portfolio/presentation/widgets/tree_painter.dart';
 
+import '../../core/layout/adaptive.dart';
+import '../../core/utils/functions.dart';
+import '../../values/values.dart';
 import 'experience_section.dart';
 
 class ExperienceTree extends StatelessWidget {
-  ExperienceTree({
-    required this.experienceData,
+  const ExperienceTree({
+    Key? key,
     this.head,
     this.widthOfTree,
     this.headTitle,
     this.headTitleStyle,
     this.tailTitleStyle,
-    this.tail,
-    this.tailTitle,
     this.headBackgroundColor,
+    this.tailTitle,
     this.tailBackgroundColor,
+    this.tail,
+    required this.experienceData,
     this.scrollController,
-  });
+  }) : super(key: key);
 
   final Widget? head;
   final double? widthOfTree;
@@ -37,52 +38,50 @@ class ExperienceTree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    return Container(
-      child: ListView(
-        controller: scrollController,
-        children: [
-          Center(
-            child: Container(
-              padding: EdgeInsets.all(Sizes.PADDING_8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Sizes.RADIUS_20),
-                color: headBackgroundColor ??
-                    AppColors.primaryColor
-                        .withOpacity(AppColors.primaryColorOpacity),
-              ),
-              child: Text(
-                headTitle!,
-                style: headTitleStyle ??
-                    theme.textTheme.subtitle1!
-                        .copyWith(color: AppColors.accentColor2),
-              ),
+    return ListView(
+      controller: scrollController,
+      children: [
+        Center(
+          child: Container(
+            padding: const EdgeInsets.all(Sizes.PADDING_8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(Sizes.RADIUS_20),
+              color: headBackgroundColor ??
+                  AppColors.primaryColor
+                      .withOpacity(AppColors.primaryColorOpacity),
+            ),
+            child: Text(
+              headTitle!,
+              style: headTitleStyle ??
+                  theme.textTheme.subtitle1!
+                      .copyWith(color: AppColors.accentColor2),
             ),
           ),
-          Column(
-            children: _buildExperienceBranches(
-              context: context,
-              experienceData: experienceData,
+        ),
+        Column(
+          children: _buildExperienceBranches(
+            context: context,
+            experienceData: experienceData,
+          ),
+        ),
+        Center(
+          child: Container(
+            padding: const EdgeInsets.all(Sizes.PADDING_8),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(Sizes.RADIUS_20),
+              color: tailBackgroundColor ??
+                  AppColors.primaryColor
+                      .withOpacity(AppColors.primaryColorOpacity),
+            ),
+            child: Text(
+              tailTitle!,
+              style: tailTitleStyle ??
+                  theme.textTheme.subtitle1!
+                      .copyWith(color: AppColors.accentColor2),
             ),
           ),
-          Center(
-            child: Container(
-              padding: EdgeInsets.all(Sizes.PADDING_8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(Sizes.RADIUS_20),
-                color: tailBackgroundColor ??
-                    AppColors.primaryColor
-                        .withOpacity(AppColors.primaryColorOpacity),
-              ),
-              child: Text(
-                tailTitle!,
-                style: tailTitleStyle ??
-                    theme.textTheme.subtitle1!
-                        .copyWith(color: AppColors.accentColor2),
-              ),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
@@ -113,7 +112,7 @@ class ExperienceTree extends StatelessWidget {
 }
 
 class ExperienceBranch extends StatefulWidget {
-  ExperienceBranch({
+  const ExperienceBranch({
     this.width,
     this.height = 200,
     this.roles,
@@ -182,7 +181,7 @@ class _ExperienceBranchState extends State<ExperienceBranch> {
                 .withOpacity(AppColors.primaryColorOpacity),
             innerJointColor: AppColors.primaryColor,
           ),
-      child: Container(
+      child: SizedBox(
         width: widget.width,
         height: widget.height,
         child: Stack(
@@ -228,7 +227,7 @@ class _ExperienceBranchState extends State<ExperienceBranch> {
 }
 
 class LocationDateLeaf extends StatelessWidget {
-  LocationDateLeaf({
+  const LocationDateLeaf({
     required this.duration,
     required this.location,
     this.durationIcon,
@@ -260,7 +259,7 @@ class LocationDateLeaf extends StatelessWidget {
               ),
               SpaceW4(),
               durationIcon ??
-                  Icon(
+                  const Icon(
                     Icons.access_time,
                     color: AppColors.accentColor2,
                     size: 18,
@@ -278,7 +277,7 @@ class LocationDateLeaf extends StatelessWidget {
               ),
               SpaceW4(),
               locationIcon ??
-                  Icon(
+                  const Icon(
                     Icons.location_on,
                     color: AppColors.accentColor2,
                     size: 18,
@@ -292,7 +291,7 @@ class LocationDateLeaf extends StatelessWidget {
 }
 
 class RoleLeaf extends StatelessWidget {
-  RoleLeaf({
+  const RoleLeaf({
     required this.company,
     required this.position,
     required this.roles,

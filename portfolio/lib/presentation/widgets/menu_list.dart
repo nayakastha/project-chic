@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/menu_item.dart';
-import 'package:aerium/presentation/widgets/socials.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
+
+import '../../core/utils/functions.dart';
+import '../../values/values.dart';
+import 'menu_item.dart';
+import 'socials.dart';
 
 class MenuList extends StatelessWidget {
-  MenuList({
+  const MenuList({
+    Key? key,
     required this.menuList,
     this.selectedItemRouteName,
-  });
+  }) : super(key: key);
 
   final List<MenuData> menuList;
   final String? selectedItemRouteName;
@@ -23,7 +25,7 @@ class MenuList extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         ..._buildMenuList(menuList: menuList, context: context),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Socials(
@@ -33,7 +35,7 @@ class MenuList extends StatelessWidget {
           barColor: AppColors.secondaryColor,
           crossAxisAlignment: CrossAxisAlignment.start,
         ),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Text(
@@ -59,7 +61,7 @@ class MenuList extends StatelessWidget {
               ),
             ),
             SpaceW4(),
-            Icon(
+            const Icon(
               FontAwesomeIcons.solidHeart,
               color: Colors.red,
               size: Sizes.ICON_SIZE_10,

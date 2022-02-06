@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:portfolio/presentation/widgets/spaces.dart';
 
+import '../../values/values.dart';
 import 'circular_container.dart';
 import 'custom_text_form_field.dart';
 
 class ContactForm extends StatelessWidget {
-  ContactForm({
+  const ContactForm({
+    Key? key,
     this.padding,
-    this.maxLines = 12,
     this.controllers,
-  });
+    this.maxLines = 12,
+  }) : super(key: key);
 
   final EdgeInsetsGeometry? padding;
   final List<TextEditingController>? controllers;
@@ -59,7 +60,7 @@ class ContactForm extends StatelessWidget {
 }
 
 class SendMessageButton extends StatelessWidget {
-  SendMessageButton({
+  const SendMessageButton({
     this.message = StringConst.SEND_MESSAGE,
     this.onPressed,
   });
@@ -77,7 +78,8 @@ class SendMessageButton extends StatelessWidget {
         children: [
           Text(
             message,
-            style: theme.textTheme.headline6!.copyWith(color: AppColors.grey100),
+            style:
+                theme.textTheme.headline6!.copyWith(color: AppColors.grey100),
           ),
           SpaceW12(),
           CircularContainer(

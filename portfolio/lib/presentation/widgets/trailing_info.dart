@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/circular_container.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../core/utils/functions.dart';
+import '../../values/values.dart';
+import 'circular_container.dart';
 
 class TrailingInfo extends StatelessWidget {
-  TrailingInfo({
+  const TrailingInfo({
+    Key? key,
     this.leadingWidget,
     this.middleWidget,
     this.trailingWidget,
@@ -12,11 +14,11 @@ class TrailingInfo extends StatelessWidget {
     this.padding,
     this.info = StringConst.DEV_EMAIL,
     this.width,
+    this.color,
     this.onTrailingWidgetPressed,
     this.onLeadingWidgetPressed,
-    this.color,
     this.crossAxisAlignment = CrossAxisAlignment.end,
-  });
+  }) : super(key: key);
 
   final Widget? leadingWidget;
   final Widget? middleWidget;
@@ -36,7 +38,7 @@ class TrailingInfo extends StatelessWidget {
     return Container(
       width: width,
       padding: padding ??
-          EdgeInsets.only(
+          const EdgeInsets.only(
             top: Sizes.PADDING_30,
             right: Sizes.PADDING_30,
             bottom: Sizes.PADDING_20,
@@ -51,7 +53,7 @@ class TrailingInfo extends StatelessWidget {
                   Functions.launchUrl(StringConst.EMAIL_URL);
                 },
             child: leadingWidget ??
-                CircularContainer(
+                const CircularContainer(
                   width: Sizes.WIDTH_30,
                   height: Sizes.HEIGHT_30,
                   color: AppColors.primaryColor,
@@ -62,7 +64,7 @@ class TrailingInfo extends StatelessWidget {
                   ),
                 ),
           ),
-          spacingWidget ?? Spacer(flex: 1),
+          spacingWidget ?? const Spacer(flex: 1),
           middleWidget ??
               RotatedBox(
                 quarterTurns: 1,
@@ -75,11 +77,11 @@ class TrailingInfo extends StatelessWidget {
                   ),
                 ),
               ),
-          spacingWidget ?? Spacer(flex: 1),
+          spacingWidget ?? const Spacer(flex: 1),
           InkWell(
             onTap: onTrailingWidgetPressed,
             child: trailingWidget ??
-                CircularContainer(
+                const CircularContainer(
                   color: AppColors.primaryColor,
                   width: Sizes.WIDTH_30,
                   height: Sizes.HEIGHT_30,

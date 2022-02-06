@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../values/values.dart';
 
 class HorizontalBar extends StatelessWidget {
-  HorizontalBar({
+  const HorizontalBar({
+    Key? key,
     this.width = Sizes.WIDTH_20,
     this.height = Sizes.HEIGHT_2,
     this.color = AppColors.accentColor2, //AppColors.secondaryColor
     this.margin,
-  });
+  }) : super(key: key);
 
   final double width;
   final double height;

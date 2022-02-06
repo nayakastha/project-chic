@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/values/values.dart';
+
+import '../../core/layout/adaptive.dart';
+import '../../values/values.dart';
 
 class ContentWrapper extends StatelessWidget {
-  ContentWrapper({
+  const ContentWrapper({
+    Key? key,
     this.width,
     this.height,
     this.color = AppColors.grey100,
     this.gradient,
     this.child,
-  });
+  }) : super(key: key);
 
   final double? width;
   final double? height;
