@@ -55,9 +55,9 @@ class _BottomDraggableScrollableSheetState
             child: Column(
               children: [
                 SpaceH8(),
-                HorizontalBar(
+                const HorizontalBar(
                   color: AppColors.secondaryColor,
-                  margin: const EdgeInsets.only(right: 8),
+                  margin: EdgeInsets.only(right: 8),
                   width: 40,
                   height: 2,
                 ),

@@ -188,7 +188,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
             ),
           ),
           _isContentVisible ? _fadeInImage() : Container(),
-          BottomDraggableScrollableSheet(),
+          const BottomDraggableScrollableSheet(),
         ],
       ),
     );
@@ -229,7 +229,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
           opacity: opacityAnimation,
           child: Row(
             children: [
-              Container(
+              SizedBox(
                 width: assignWidth(context: context, fraction: 0.4),
                 child: child,
               ),

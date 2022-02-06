@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:portfolio/presentation/widgets/spaces.dart';
 import 'package:portfolio/presentation/widgets/tree_painter.dart';
 
@@ -113,17 +114,18 @@ class ExperienceTree extends StatelessWidget {
 
 class ExperienceBranch extends StatefulWidget {
   const ExperienceBranch({
+    Key? key,
     this.width,
+    this.stalk = 0.1,
     this.height = 200,
-    this.roles,
     this.company,
     this.companyUrl,
-    this.position,
     this.location,
     this.duration,
+    this.position,
+    this.roles,
     this.customPainter,
-    this.stalk = 0.1,
-  });
+  }) : super(key: key);
 
   final double? width;
   final double stalk;
@@ -228,13 +230,14 @@ class _ExperienceBranchState extends State<ExperienceBranch> {
 
 class LocationDateLeaf extends StatelessWidget {
   const LocationDateLeaf({
+    Key? key,
     required this.duration,
-    required this.location,
-    this.durationIcon,
-    this.locationIcon,
-    this.locationTextStyle,
     this.durationTextStyle,
-  });
+    required this.location,
+    this.locationTextStyle,
+    this.locationIcon,
+    this.durationIcon,
+  }) : super(key: key);
 
   final String? duration;
   final TextStyle? durationTextStyle;
@@ -246,46 +249,44 @@ class LocationDateLeaf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    return Container(
-      child: Column(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                duration!,
-                style: durationTextStyle ??
-                    theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
-              ),
-              SpaceW4(),
-              durationIcon ??
-                  const Icon(
-                    Icons.access_time,
-                    color: AppColors.accentColor2,
-                    size: 18,
-                  ),
-            ],
-          ),
-          SpaceH8(),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                location!,
-                style: locationTextStyle ??
-                    theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
-              ),
-              SpaceW4(),
-              locationIcon ??
-                  const Icon(
-                    Icons.location_on,
-                    color: AppColors.accentColor2,
-                    size: 18,
-                  ),
-            ],
-          )
-        ],
-      ),
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Text(
+              duration!,
+              style: durationTextStyle ??
+                  theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
+            ),
+            SpaceW4(),
+            durationIcon ??
+                const Icon(
+                  Icons.access_time,
+                  color: AppColors.accentColor2,
+                  size: 18,
+                ),
+          ],
+        ),
+        SpaceH8(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Text(
+              location!,
+              style: locationTextStyle ??
+                  theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
+            ),
+            SpaceW4(),
+            locationIcon ??
+                const Icon(
+                  Icons.location_on,
+                  color: AppColors.accentColor2,
+                  size: 18,
+                ),
+          ],
+        )
+      ],
     );
   }
 }
@@ -312,33 +313,31 @@ class RoleLeaf extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          InkWell(
-            onTap: onTap,
-            child: Text(
-              company!,
-              style: companyTextStyle ??
-                  theme.textTheme.subtitle1!.copyWith(
-                      fontSize: Sizes.TEXT_SIZE_18,
-                      color: AppColors.accentColor2),
-            ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        InkWell(
+          onTap: onTap,
+          child: Text(
+            company!,
+            style: companyTextStyle ??
+                theme.textTheme.subtitle1!.copyWith(
+                    fontSize: Sizes.TEXT_SIZE_18,
+                    color: AppColors.accentColor2),
           ),
-          Text(
-            position!,
-            style: positionTextStyle ??
-                theme.textTheme.subtitle2!.copyWith(
-                    fontStyle: FontStyle.italic, color: AppColors.accentColor2),
-          ),
-          SpaceH8(),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: _buildRoles(roles: roles!, context: context),
-          ),
-        ],
-      ),
+        ),
+        Text(
+          position!,
+          style: positionTextStyle ??
+              theme.textTheme.subtitle2!.copyWith(
+                  fontStyle: FontStyle.italic, color: AppColors.accentColor2),
+        ),
+        SpaceH8(),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: _buildRoles(roles: roles!, context: context),
+        ),
+      ],
     );
   }
 

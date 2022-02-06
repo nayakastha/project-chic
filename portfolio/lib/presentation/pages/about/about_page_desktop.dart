@@ -12,6 +12,8 @@ import '../portfolio/portfolio_page.dart';
 import 'about_page.dart';
 
 class AboutPageDesktop extends StatefulWidget {
+  const AboutPageDesktop({Key? key}) : super(key: key);
+
   @override
   _AboutPageDesktopState createState() => _AboutPageDesktopState();
 }

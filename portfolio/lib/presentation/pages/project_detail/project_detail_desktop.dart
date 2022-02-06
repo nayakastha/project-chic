@@ -157,69 +157,67 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
   Widget _buildAnimation(BuildContext context, Widget? child) {
     return Stack(
       children: [
-        Container(
-          child: Column(
-            children: [
-              Row(
-                children: <Widget>[
-                  ContentWrapper(
-                    width: assignWidth(
-                      context: context,
-                      fraction: 0.2,
+        Column(
+          children: [
+            Row(
+              children: <Widget>[
+                ContentWrapper(
+                  width: assignWidth(
+                    context: context,
+                    fraction: 0.2,
+                  ),
+                  color: AppColors.primaryColor,
+                  child: Container(
+                    margin: const EdgeInsets.only(
+                      left: Sizes.MARGIN_20,
+                      top: Sizes.MARGIN_20,
+                      bottom: Sizes.MARGIN_20,
                     ),
-                    color: AppColors.primaryColor,
-                    child: Container(
-                      margin: const EdgeInsets.only(
-                        left: Sizes.MARGIN_20,
-                        top: Sizes.MARGIN_20,
-                        bottom: Sizes.MARGIN_20,
-                      ),
-                      child: MenuList(
-                        menuList: Data.menuList,
-                        selectedItemRouteName: PortfolioPage.portfolioPageRoute,
-                      ),
+                    child: MenuList(
+                      menuList: Data.menuList,
+                      selectedItemRouteName: PortfolioPage.portfolioPageRoute,
                     ),
                   ),
-                  ContentWrapper(
-                    width: assignWidth(
-                      context: context,
-                      fraction: 0.8,
-                    ),
-                    color: AppColors.grey100,
-                    child: Row(
-                      children: [
-                        Container(
-                          width: assignWidth(
-                            context: context,
-                            fraction: 0.7,
-                          ),
-                          padding: EdgeInsets.symmetric(
-                            horizontal:
-                                assignWidth(context: context, fraction: 0.04),
-                            vertical:
-                                assignHeight(context: context, fraction: 0.04),
-                          ),
-                          child: _buildProjectDetailContent(),
-                        ),
-                        SizedBox(
-                          width: assignWidth(
-                            context: context,
-                            fraction: 0.025,
-                          ),
-                        ),
-                        TrailingInfo(
-                          width: assignWidth(
-                            context: context,
-                            fraction: 0.075,
-                          ),
-                        ),
-                      ],
-                    ),
+                ),
+                ContentWrapper(
+                  width: assignWidth(
+                    context: context,
+                    fraction: 0.8,
                   ),
-                ],
-              )
-            ],
-          ),
+                  color: AppColors.grey100,
+                  child: Row(
+                    children: [
+                      Container(
+                        width: assignWidth(
+                          context: context,
+                          fraction: 0.7,
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal:
+                              assignWidth(context: context, fraction: 0.04),
+                          vertical:
+                              assignHeight(context: context, fraction: 0.04),
+                        ),
+                        child: _buildProjectDetailContent(),
+                      ),
+                      SizedBox(
+                        width: assignWidth(
+                          context: context,
+                          fraction: 0.025,
+                        ),
+                      ),
+                      TrailingInfo(
+                        width: assignWidth(
+                          context: context,
+                          fraction: 0.075,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            )
+          ],
         ),
       ],
     );
@@ -316,7 +314,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                                         );
                                       },
                                     )
-                                  : Emptiness(),
+                                  : const Emptiness(),
                               widget.projectDetails!.isOnPlayStore!
                                   ? InkWell(
                                       onTap: () {
@@ -335,7 +333,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                                         ),
                                       ),
                                     )
-                                  : Emptiness(),
+                                  : const Emptiness(),
                               widget.projectDetails!.isLive!
                                   ? SocialButton(
                                       icon: FeatherIcons.globe,
@@ -344,7 +342,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                                             widget.projectDetails!.webUrl!);
                                       },
                                     )
-                                  : Emptiness(),
+                                  : const Emptiness(),
                             ],
                           )
                         ],

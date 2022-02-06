@@ -45,7 +45,7 @@ class ExperiencePageMobile extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
             ),
-            actions: [],
+            actions: const [],
           ),
         ),
         drawer: AppDrawer(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:portfolio/presentation/widgets/spaces.dart';
 
 import '../../values/values.dart';
@@ -61,9 +62,10 @@ class ContactForm extends StatelessWidget {
 
 class SendMessageButton extends StatelessWidget {
   const SendMessageButton({
+    Key? key,
     this.message = StringConst.SEND_MESSAGE,
     this.onPressed,
-  });
+  }) : super(key: key);
 
   final String message;
   final VoidCallback? onPressed;
@@ -82,7 +84,7 @@ class SendMessageButton extends StatelessWidget {
                 theme.textTheme.headline6!.copyWith(color: AppColors.grey100),
           ),
           SpaceW12(),
-          CircularContainer(
+          const CircularContainer(
             child: Icon(
               Icons.send,
               color: AppColors.secondaryColor,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:portfolio/presentation/widgets/spaces.dart';
 
 import '../../core/utils/functions.dart';
@@ -97,12 +98,13 @@ class ExperienceSection extends StatelessWidget {
 
 class Role extends StatelessWidget {
   const Role({
+    Key? key,
     required this.role,
     this.roleTextStyle,
     this.icon = Icons.arrow_right,
-    this.iconSize = Sizes.ICON_SIZE_18,
     this.color = AppColors.complimentColor1,
-  });
+    this.iconSize = Sizes.ICON_SIZE_18,
+  }) : super(key: key);
 
   final String role;
   final TextStyle? roleTextStyle;

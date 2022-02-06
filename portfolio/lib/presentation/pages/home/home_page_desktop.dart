@@ -103,11 +103,11 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                           ),
                         ),
                         SpaceW8(),
-                        CircularContainer(
+                        const CircularContainer(
                           width: Sizes.WIDTH_24,
                           height: Sizes.HEIGHT_24,
                           color: AppColors.primaryColor,
-                          child: const Icon(
+                          child: Icon(
                             Icons.add,
                             color: AppColors.secondaryColor,
                             size: Sizes.ICON_SIZE_20,
@@ -131,11 +131,11 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                           ),
                         ),
                         SpaceW8(),
-                        CircularContainer(
+                        const CircularContainer(
                           color: AppColors.primaryColor,
                           width: Sizes.WIDTH_24,
                           height: Sizes.HEIGHT_24,
-                          child: const Icon(
+                          child: Icon(
                             Icons.chevron_right,
                             color: AppColors.secondaryColor,
                           ),
@@ -159,14 +159,12 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                       top: assignHeight(context: context, fraction: 0.0),
                       left: assignWidth(context: context, fraction: 0.5) -
                           (image.width + 100.0) / 2,
-                      child: Container(
-                        child: Image.asset(
-                          ImagePath.DEV,
-                          width: (image.width + 100.0),
-                          height: assignHeight(context: context, fraction: 1.0),
-                          fit: BoxFit.cover,
-                          scale: 1.0,
-                        ),
+                      child: Image.asset(
+                        ImagePath.DEV,
+                        width: (image.width + 100.0),
+                        height: assignHeight(context: context, fraction: 1.0),
+                        fit: BoxFit.cover,
+                        scale: 1.0,
                       ),
                     );
                   } else {
@@ -178,14 +176,12 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                 top: assignHeight(context: context, fraction: 0.05),
                 left: assignWidth(context: context, fraction: 0.5) -
                     widthOfImage / 2,
-                child: Container(
-                  child: Image.asset(
-                    ImagePath.DEV,
-                    width: widthOfImage,
-                    height: assignHeight(context: context, fraction: 1),
-                    fit: BoxFit.cover,
-                    scale: 2.0,
-                  ),
+                child: Image.asset(
+                  ImagePath.DEV,
+                  width: widthOfImage,
+                  height: assignHeight(context: context, fraction: 1),
+                  fit: BoxFit.cover,
+                  scale: 2.0,
                 ),
               ),
       ],

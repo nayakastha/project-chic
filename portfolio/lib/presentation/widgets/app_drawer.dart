@@ -49,11 +49,11 @@ class AppDrawer extends StatelessWidget {
                         () {
                           Navigator.pop(context);
                         },
-                    child: CircularContainer(
+                    child: const CircularContainer(
                       color: AppColors.accentColor2,
                       width: Sizes.WIDTH_30,
                       height: Sizes.HEIGHT_30,
-                      child: const Icon(
+                      child: Icon(
                         Icons.close,
                         size: Sizes.ICON_SIZE_20,
                         color: AppColors.secondaryColor,
@@ -71,7 +71,7 @@ class AppDrawer extends StatelessWidget {
               ],
             ),
             const Spacer(flex: 1),
-            Socials(
+            const Socials(
               isHorizontal: true,
               color: AppColors.accentColor2,
               alignment: Alignment.center,

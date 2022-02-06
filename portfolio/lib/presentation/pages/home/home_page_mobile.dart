@@ -93,11 +93,11 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                   ),
                                 ),
                                 SpaceH12(),
-                                CircularContainer(
+                                const CircularContainer(
                                   width: Sizes.WIDTH_24,
                                   height: Sizes.HEIGHT_24,
                                   color: AppColors.secondaryColor,
-                                  child: const Icon(
+                                  child: Icon(
                                     Icons.keyboard_arrow_down,
                                     color: AppColors.primaryColor,
                                   ),
@@ -176,18 +176,16 @@ class _HomePageMobileState extends State<HomePageMobile> {
     return Positioned(
       top: 56,
       right: -assignWidth(context: context, fraction: 0.42),
-      child: Container(
-        child: Image.asset(
-          ImagePath.DEV,
-          height: assignHeight(context: context, fraction: 1),
-          fit: BoxFit.cover,
-        ),
+      child: Image.asset(
+        ImagePath.DEV,
+        height: assignHeight(context: context, fraction: 1),
+        fit: BoxFit.cover,
       ),
     );
   }
 
   Widget _buildSocials() {
-    return Positioned(
+    return const Positioned(
       right: Sizes.SIZE_16,
       bottom: Sizes.SIZE_30,
       child: Socials(

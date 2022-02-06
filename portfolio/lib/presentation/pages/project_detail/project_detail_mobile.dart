@@ -264,7 +264,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                                       widget.projectDetails!.gitHubUrl!);
                                 },
                               )
-                            : Emptiness(),
+                            : const Emptiness(),
                         widget.projectDetails!.isOnPlayStore!
                             ? InkWell(
                                 onTap: () {
@@ -282,7 +282,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                                   ),
                                 ),
                               )
-                            : Emptiness(),
+                            : const Emptiness(),
                         widget.projectDetails!.isLive!
                             ? SocialButton(
                                 //web
@@ -293,7 +293,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                                   );
                                 },
                               )
-                            : Emptiness(),
+                            : const Emptiness(),
                       ],
                     ),
                   ],

@@ -228,11 +228,9 @@ class _PortfolioPageDesktopState extends State<PortfolioPageDesktop>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: AnimatedBuilder(
-          animation: _controller,
-          builder: _buildAnimation,
-        ),
+      body: AnimatedBuilder(
+        animation: _controller,
+        builder: _buildAnimation,
       ),
     );
   }
