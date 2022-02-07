@@ -5,7 +5,7 @@ part of values;
 class StringConst {
   //strings
   static const String APP_NAME = "Astha Nayak";
-  static const String APP_TITLE = "Astha Nayak Portfolio";
+  static const String APP_TITLE = "Astha Nayak | Portfolio";
   static const String SITE_URL = "https://asthanayak.tech";
 
   static const String HOME = "Home";

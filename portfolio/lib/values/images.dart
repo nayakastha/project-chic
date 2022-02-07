@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 part of values;
 
 class ImagePath {
@@ -6,8 +8,7 @@ class ImagePath {
   static const String screenshotsDir = "assets/screenshots";
 
   //Images
-  static const String DEV = "$imageDir/david_legend.png";
-  
+  static const String DEV = "$imageDir/astha.png";
 
   static const String VYBZ = "$imageDir/vybz.jpg";
   static const String COLOSSAL_TOONS = "$imageDir/colossal_toons.jpg";

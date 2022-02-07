@@ -177,6 +177,7 @@ class Data {
     SubMenuData(
       title: StringConst.EDUCATION,
       isSelected: false,
+      isAnimation: true,
       content: StringConst.EDUCATION_TEXT,
     ),
   ];

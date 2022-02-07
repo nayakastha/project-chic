@@ -93,7 +93,7 @@ class _SubMenuListState extends State<SubMenuList>
   }
 
   Widget _buildAnimation(BuildContext context, Widget? child) {
-    return Container(
+    return SizedBox(
       width: widget.width,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,11 +102,8 @@ class _SubMenuListState extends State<SubMenuList>
             opacity: menuAnimation.value,
             duration: _controller.duration!,
             child: Wrap(
-//              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               runSpacing: 8,
-              children: [
-                ..._buildSubMenuList(widget.subMenuData),
-              ],
+              children: [..._buildSubMenuList(widget.subMenuData)],
             ),
           ),
           SpaceH16(),

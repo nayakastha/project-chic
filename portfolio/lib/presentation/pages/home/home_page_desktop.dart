@@ -164,7 +164,7 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                         width: (image.width + 100.0),
                         height: assignHeight(context: context, fraction: 1.0),
                         fit: BoxFit.cover,
-                        scale: 1.0,
+                        scale: 3.0,
                       ),
                     );
                   } else {
