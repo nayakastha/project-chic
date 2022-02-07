@@ -1,10 +1,12 @@
+// ignore_for_file: constant_identifier_names
+
 part of values;
 
 class StringConst {
   //strings
-  static const String APP_NAME = "Aerium";
-  static const String APP_TITLE = "David Cobbina Portfolio";
-  static const String SITE_URL = "https://davidcobbina.com";
+  static const String APP_NAME = "Astha Nayak";
+  static const String APP_TITLE = "Astha Nayak Portfolio";
+  static const String SITE_URL = "https://asthanayak.tech";
 
   static const String HOME = "Home";
   static const String ABOUT_ME = "About Me";
@@ -16,14 +18,14 @@ class StringConst {
   static const String PHONE_NUMBER = "Phone Number";
   static const String RESUME = "Resume";
   static const String CERTIFICATIONS = "Certifications";
-  static const String EMAIL_VALUE = "davidcobbina47@gmail.com";
+  static const String EMAIL_VALUE = "nayakastha2911@gmail.com";
 
   static const String MESSAGE_ME = "Message me";
   static const String GET_IN_TOUCH = "Get in touch";
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH = "Built with ";
-  static const String DEV_EMAIL = "davidcobbina47@gmail.com";
+  static const String DEV_EMAIL = "nayakastha2911@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
@@ -36,18 +38,18 @@ class StringConst {
   static const String PROJECT_NAME = "Project Name";
 
   static const String INTRO = "Hi, my name is";
-  static const String DEV_NAME = "David Cobbina";
-  static const String PUNCH_LINE = "I build things with flutter";
+  static const String DEV_NAME = "Astha Nayak";
+  static const String PUNCH_LINE = "I build things with technology";
   static const String SPECIALITY = "FLUTTER DEV";
-  static const String DESIGNED_IN = "Made in Ghana with ";
+  static const String DESIGNED_IN = "Made in India with ";
   static const String DESIGNED_BY = "Designed by Pavel G. ";
-  static const String BUILT_BY = "Built by David Cobbina ";
+  static const String BUILT_BY = "Built by Astha Nayak ";
 
   static const String ABOUT_DEV_TEXT =
-      "I'm a software engineer based in Ghana, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience.";
+      "I'm a pre-final year student residing in India, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience.";
 
   static const String EDUCATION_TEXT =
-      "I am self taught programmer who graduated from Kwame Nkrumah Univeristy of Science Technology with a degree in Agricultural Engineering. I love learning and writing computer programs.";
+      "I am self taught programmer who is pursuing Bachelors in Computer Science Engineering at National Institute of Technology Rourkela, India. I love learning and writing computer programs.";
   //Form Hint Texts
   static const String NAME_HINT_TEXT = "Name";
   static const String PHONE_HINT_TEXT = "Phone (Optional)";
@@ -83,13 +85,13 @@ class StringConst {
   static const String CERTIFICATION_PAGE = "/certifications";
 
   //Socials
-  static const String GITHUB_URL = "https://github.com/david-legend";
+  static const String GITHUB_URL = "https://github.com/nayakastha";
   static const String LINKED_IN_URL =
-      "https://www.linkedin.com/in/david-cobbina-7b0226119";
-  static const String TWITTER_URL = "https://twitter.com/DavidLegend47";
+      "https://www.linkedin.com/in/astha-nayak/";
+  static const String TWITTER_URL = "https://twitter.com/AsthaNayak1";
   static const String INSTAGRAM_URL =
-      "https://www.instagram.com/david_legend_47";
-  static const String TELEGRAM_URL = "https://t.me/DavidLegend";
+      "https://www.instagram.com/upbeat._.phantom/?hl=en";
+  static const String TELEGRAM_URL = "https://t.me/AsthaNayak";
 
   //Contacts
   static const String CONNECT = "Connect with me";
