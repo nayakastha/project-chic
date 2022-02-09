@@ -60,7 +60,9 @@ class _SubMenuListState extends State<SubMenuList>
   Future<void> _playAnimation() async {
     try {
       await _controller.forward().orCancel;
-    } on TickerCanceled {}
+    } on TickerCanceled {
+      debugPrint("Ticket Cancelled");
+    }
   }
 
   initTweens() {
@@ -103,7 +105,9 @@ class _SubMenuListState extends State<SubMenuList>
             duration: _controller.duration!,
             child: Wrap(
               runSpacing: 8,
-              children: [..._buildSubMenuList(widget.subMenuData)],
+              children: [
+                ..._buildSubMenuList(widget.subMenuData),
+              ],
             ),
           ),
           SpaceH16(),
@@ -122,7 +126,7 @@ class _SubMenuListState extends State<SubMenuList>
   }
 
   List<Widget> _buildSubMenuList(List<SubMenuData> menuData) {
-    List<Widget> menuList = [];
+    List<Widget> menuList = <Widget>[];
     for (var index = 0; index < menuData.length; index++) {
       menuList.add(
         InkWell(
@@ -162,7 +166,7 @@ class _SubMenuListState extends State<SubMenuList>
           );
         } else {
           return Text(
-            menuData[index].content!,
+            menuData[index].content ?? " ",
             style: theme.textTheme.bodyText2!.copyWith(
               color: AppColors.black,
               fontSize: Sizes.TEXT_SIZE_16,

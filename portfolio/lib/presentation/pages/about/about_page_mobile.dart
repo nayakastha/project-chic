@@ -187,7 +187,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
               ],
             ),
           ),
-          _isContentVisible ? _fadeInImage() : Container(),
+          //_isContentVisible ? _fadeInImage() : Container(),
           const BottomDraggableScrollableSheet(),
         ],
       ),

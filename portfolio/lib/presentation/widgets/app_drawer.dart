@@ -104,7 +104,7 @@ class AppDrawer extends StatelessWidget {
                   StringConst.BUILT_BY + ", " + StringConst.DESIGNED_BY,
                   style: theme.textTheme.bodyText1!.copyWith(
                     color: AppColors.accentColor2,
-                    fontSize: Sizes.TEXT_SIZE_10,
+                    fontSize: Sizes.TEXT_SIZE_8,
                   ),
                 ),
               ],

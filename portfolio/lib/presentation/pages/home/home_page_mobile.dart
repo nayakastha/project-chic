@@ -125,7 +125,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
             ],
           ),
           _buildAppBar(),
-          _buildDevImage(),
+          //_buildDevImage(),
           _buildSocials(),
         ],
       ),

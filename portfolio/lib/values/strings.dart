@@ -39,7 +39,7 @@ class StringConst {
 
   static const String INTRO = "Hi, my name is";
   static const String DEV_NAME = "Astha Nayak";
-  static const String PUNCH_LINE = "I build things with technology";
+  static const String PUNCH_LINE = "I build AWESOME stuff with technology";
   static const String SPECIALITY = "FLUTTER DEV";
   static const String DESIGNED_IN = "Made in India with ";
   static const String DESIGNED_BY = "Designed by Pavel G. ";
@@ -49,7 +49,7 @@ class StringConst {
       "I'm a pre-final year student residing in India, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience.";
 
   static const String EDUCATION_TEXT =
-      "I am self taught programmer who is pursuing Bachelors in Computer Science Engineering at National Institute of Technology Rourkela, India. I love learning and writing computer programs.";
+      "I am self taught programmer who is pursuing Bachelors in Computer Science Engineering at National Institute of Technology Rourkela, India. I love learning and writing computer programs. I am an alumni of KIIT International Institute of Technology, Bhubaneswar, India (Batch of 2019) and Delhi Public School, Nalco Nagar (Batch of 2017)";
   //Form Hint Texts
   static const String NAME_HINT_TEXT = "Name";
   static const String PHONE_HINT_TEXT = "Phone (Optional)";
@@ -59,17 +59,24 @@ class StringConst {
   static const String SEND_MESSAGE = "Send Message";
 
   //Skills
-  static const String FLUTTER = "Flutter";
-  static const String JAVA = "Java";
-  static const String ANDROID = "Android";
+  static const String DART = "Dart";
   static const String KOTLIN = "Kotlin";
+  static const String C = "C";
+  static const String CPP = "C++";
+  static const String JAVA = "Java";
+  static const String PYTHON = "Python";
+  static const String TYPESCRIPT = "TypeScript";
   static const String JAVASCRIPT = "Javascript";
-  static const String PHP = "PHP";
-  static const String LARAVEL = "Laravel";
   static const String SQL = "SQL";
-  static const String WORDPRESS = "Wordpress";
-  static const String BOOTSTRAP = "Bootstrap";
-  static const String HTML_CSS = "HTML/CSS";
+  static const String MARKDOWN = "Markdown";
+  static const String FLUTTER = "Flutter";
+  static const String ANDROID = "Android";
+  static const String NODEJS = "NodeJS";
+  static const String MONGODB = "MongoDB";
+  static const String FIREBASE = "Firebase";
+  static const String GIT = "Git";
+  static const String GCP = "Google Cloud Platform";
+  static const String AWS = "Amazon Web Services";
 
   //routes
   static const String HOME_PAGE = "/";

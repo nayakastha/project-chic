@@ -148,42 +148,42 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
             )
           ],
         ),
-        isDisplaySmallDesktop(context)
-            ? FutureBuilder<ui.Image>(
-                future: _getImage(),
-                builder:
-                    (BuildContext context, AsyncSnapshot<ui.Image> snapshot) {
-                  if (snapshot.hasData) {
-                    ui.Image image = snapshot.data!;
-                    return Positioned(
-                      top: assignHeight(context: context, fraction: 0.0),
-                      left: assignWidth(context: context, fraction: 0.5) -
-                          (image.width + 100.0) / 2,
-                      child: Image.asset(
-                        ImagePath.DEV,
-                        width: (image.width + 100.0),
-                        height: assignHeight(context: context, fraction: 1.0),
-                        fit: BoxFit.cover,
-                        scale: 3.0,
-                      ),
-                    );
-                  } else {
-                    return const Text('Loading...');
-                  }
-                },
-              )
-            : Positioned(
-                top: assignHeight(context: context, fraction: 0.05),
-                left: assignWidth(context: context, fraction: 0.5) -
-                    widthOfImage / 2,
-                child: Image.asset(
-                  ImagePath.DEV,
-                  width: widthOfImage,
-                  height: assignHeight(context: context, fraction: 1),
-                  fit: BoxFit.cover,
-                  scale: 2.0,
-                ),
-              ),
+        // isDisplaySmallDesktop(context)
+        //     ? FutureBuilder<ui.Image>(
+        //         future: _getImage(),
+        //         builder:
+        //             (BuildContext context, AsyncSnapshot<ui.Image> snapshot) {
+        //           if (snapshot.hasData) {
+        //             ui.Image image = snapshot.data!;
+        //             return Positioned(
+        //               top: assignHeight(context: context, fraction: 0.0),
+        //               left: assignWidth(context: context, fraction: 0.5) -
+        //                   (image.width + 100.0) / 2,
+        //               child: Image.asset(
+        //                 ImagePath.DEV,
+        //                 width: (image.width + 100.0),
+        //                 height: assignHeight(context: context, fraction: 1.0),
+        //                 fit: BoxFit.cover,
+        //                 scale: 3.0,
+        //               ),
+        //             );
+        //           } else {
+        //             return const Text('Loading...');
+        //           }
+        //         },
+        //       )
+        //     : Positioned(
+        //         top: assignHeight(context: context, fraction: 0.05),
+        //         left: assignWidth(context: context, fraction: 0.5) -
+        //             widthOfImage / 2,
+        //         child: Image.asset(
+        //           ImagePath.DEV,
+        //           width: widthOfImage,
+        //           height: assignHeight(context: context, fraction: 1),
+        //           fit: BoxFit.cover,
+        //           scale: 2.0,
+        //         ),
+        //       ),
       ],
     );
   }

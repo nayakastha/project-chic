@@ -154,17 +154,24 @@ class Data {
   ];
 
   static List<SkillData> skillData = [
-    SkillData(skillLevel: 95, skillName: StringConst.FLUTTER),
-    SkillData(skillLevel: 70, skillName: StringConst.JAVA),
-    SkillData(skillLevel: 78, skillName: StringConst.ANDROID),
+    SkillData(skillLevel: 85, skillName: StringConst.DART),
     SkillData(skillLevel: 70, skillName: StringConst.KOTLIN),
+    SkillData(skillLevel: 85, skillName: StringConst.C),
+    SkillData(skillLevel: 90, skillName: StringConst.CPP),
+    SkillData(skillLevel: 70, skillName: StringConst.JAVA),
+    SkillData(skillLevel: 80, skillName: StringConst.PYTHON),
+    SkillData(skillLevel: 70, skillName: StringConst.TYPESCRIPT),
     SkillData(skillLevel: 80, skillName: StringConst.JAVASCRIPT),
-    SkillData(skillLevel: 80, skillName: StringConst.PHP),
-    SkillData(skillLevel: 80, skillName: StringConst.LARAVEL),
     SkillData(skillLevel: 80, skillName: StringConst.SQL),
-    SkillData(skillLevel: 90, skillName: StringConst.WORDPRESS),
-    SkillData(skillLevel: 80, skillName: StringConst.BOOTSTRAP),
-    SkillData(skillLevel: 80, skillName: StringConst.HTML_CSS),
+    SkillData(skillLevel: 90, skillName: StringConst.MARKDOWN),
+    SkillData(skillLevel: 90, skillName: StringConst.FLUTTER),
+    SkillData(skillLevel: 78, skillName: StringConst.ANDROID),
+    SkillData(skillLevel: 75, skillName: StringConst.NODEJS),
+    SkillData(skillLevel: 65, skillName: StringConst.MONGODB),
+    SkillData(skillLevel: 80, skillName: StringConst.FIREBASE),
+    SkillData(skillLevel: 85, skillName: StringConst.GIT),
+    SkillData(skillLevel: 70, skillName: StringConst.GCP),
+    SkillData(skillLevel: 70, skillName: StringConst.AWS),
   ];
 
   static List<SubMenuData> subMenuData = [
@@ -177,7 +184,7 @@ class Data {
     SubMenuData(
       title: StringConst.EDUCATION,
       isSelected: false,
-      isAnimation: true,
+      isAnimation: false,
       content: StringConst.EDUCATION_TEXT,
     ),
   ];
@@ -241,7 +248,7 @@ class Data {
       portfolioDescription: StringConst.BEQUIP_LOGISTICS_DETAIL,
       imageSize: 0.3,
       isLive: true,
-      technologyUsed: StringConst.WORDPRESS,
+      technologyUsed: StringConst.FLUTTER,
       webUrl: StringConst.BEQUIP_LOGISTICS_WEB_URL,
     ),
     PortfolioData(

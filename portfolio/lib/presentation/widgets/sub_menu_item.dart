@@ -10,11 +10,11 @@ class SubMenuItem extends StatelessWidget {
     this.color,
     this.thickness,
     this.textStyle,
-    bool? isSelected,
+    this.isSelected,
   }) : super(key: key);
 
   final String title;
-  bool? isSelected;
+  final bool? isSelected;
   final Color? color;
   final double? thickness;
   final TextStyle? textStyle;

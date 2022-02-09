@@ -305,28 +305,28 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
             )
           ],
         ),
-        Transform.translate(
-          offset: Offset(
-            assignWidth(
-                    context: context, fraction: widthPositionOfImage.value) -
-                widthOfImage! / 2,
-            assignHeight(
-                context: context, fraction: heightPositionOfImage.value),
-          ),
-          child: Transform.scale(
-            scale: scale.value,
-            child: isDisplaySmallDesktopOrIpadPro(context)
-                ? Container(
-                    width: widthOfImage,
-                  )
-                : Image.asset(
-                    ImagePath.DEV,
-                    width: widthOfImage,
-                    height: heightOfImage,
-                    fit: BoxFit.cover,
-                  ),
-          ),
-        ),
+        // Transform.translate(
+        //   offset: Offset(
+        //     assignWidth(
+        //             context: context, fraction: widthPositionOfImage.value) -
+        //         widthOfImage! / 2,
+        //     assignHeight(
+        //         context: context, fraction: heightPositionOfImage.value),
+        //   ),
+        //   child: Transform.scale(
+        //     scale: scale.value,
+        //     child: isDisplaySmallDesktopOrIpadPro(context)
+        //         ? Container(
+        //             width: widthOfImage,
+        //           )
+        //         : Image.asset(
+        //             ImagePath.DEV,
+        //             width: widthOfImage,
+        //             height: heightOfImage,
+        //             fit: BoxFit.cover,
+        //           ),
+        //   ),
+        // ),
       ],
     );
   }
