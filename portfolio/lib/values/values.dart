@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../presentation/pages/about/about_page.dart';
-import '../presentation/pages/certification/certification_page.dart';
 import '../presentation/pages/experience/experience_page.dart';
 import '../presentation/pages/home/home_page.dart';
 import '../presentation/pages/portfolio/portfolio_page.dart';

@@ -147,10 +147,6 @@ class Data {
       routeName: ExperiencePage.experiencePageRoute,
     ),
     MenuData(title: StringConst.RESUME, routeName: StringConst.RESUME),
-    MenuData(
-      title: StringConst.CERTIFICATIONS,
-      routeName: CertificationPage.certificationPageRoute,
-    ),
   ];
 
   static List<SkillData> skillData = [
@@ -294,30 +290,6 @@ class Data {
       hasBeenReleased: false,
       technologyUsed: StringConst.FLUTTER,
       playStoreUrl: StringConst.COLOSSAL_TOONS_PLAYSTORE_URL,
-    ),
-  ];
-
-  static List<CertificationData> certificationData = [
-    CertificationData(
-      title: StringConst.ASSOCIATE_ANDROID_DEV,
-      url: StringConst.ASSOCIATE_ANDROID_DEV_URL,
-      image: ImagePath.ASSOCIATE_ANDROID_DEV,
-      imageSize: 0.30,
-      awardedBy: StringConst.GOOGLE,
-    ),
-    CertificationData(
-      title: StringConst.DATA_SCIENCE,
-      url: StringConst.DATA_SCIENCE_CERT_URL,
-      image: ImagePath.DATA_SCIENCE_CERT,
-      imageSize: 0.30,
-      awardedBy: StringConst.UDACITY,
-    ),
-    CertificationData(
-      title: StringConst.ANDROID_BASICS,
-      url: StringConst.ANDROID_BASICS_CERT_URL,
-      image: ImagePath.ANDROID_BASICS_CERT,
-      imageSize: 0.30,
-      awardedBy: StringConst.UDACITY,
     ),
   ];
 

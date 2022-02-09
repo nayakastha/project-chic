@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../pages/about/about_page.dart';
-import '../pages/certification/certification_page.dart';
 import '../pages/experience/experience_page.dart';
 import '../pages/home/home_page.dart';
 import '../pages/portfolio/portfolio_page.dart';
@@ -56,10 +55,7 @@ class RouteConfiguration {
       r'^' + ExperiencePage.experiencePageRoute,
       (context, matches) => const ExperiencePage(),
     ),
-    Path(
-      r'^' + CertificationPage.certificationPageRoute,
-      (context, matches) => const CertificationPage(),
-    ),
+
     Path(
       r'^' + HomePage.homePageRoute,
       (context, matches) => const HomePage(),

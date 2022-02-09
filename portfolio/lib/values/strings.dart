@@ -99,6 +99,7 @@ class StringConst {
   static const String INSTAGRAM_URL =
       "https://www.instagram.com/upbeat._.phantom/?hl=en";
   static const String TELEGRAM_URL = "https://t.me/AsthaNayak";
+  static const String MEDIUM_URL = "https://nayakastha2911.medium.com/";
 
   //Contacts
   static const String CONNECT = "Connect with me";
@@ -107,23 +108,7 @@ class StringConst {
   static const String TWITTER = "TWITTER";
   static const String INSTAGRAM = "INSTAGRAM";
   static const String TELEGRAM = "TELEGRAM";
-
-  //Certificate Urls
-  static const String ASSOCIATE_ANDROID_DEV_URL =
-      "https://www.credential.net/b296da88-d6be-4bb5-9756-b13efea3a421";
-  static const String DATA_SCIENCE_CERT_URL =
-      "https://graduation.udacity.com/confirm/7CGEJAFR";
-  static const String ANDROID_BASICS_CERT_URL =
-      "https://graduation.udacity.com/confirm/9VTDRN5K";
-
-  //AwardedBy
-  static const String GOOGLE = "Google";
-  static const String UDACITY = "Udacity";
-
-  //CertificationType
-  static const String ASSOCIATE_ANDROID_DEV = "Associate Android Developer";
-  static const String DATA_SCIENCE = "Data Science";
-  static const String ANDROID_BASICS = "Android Basics";
+  static const String MEDIUM = "MEDIUM";
 
   //Experience
   static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
