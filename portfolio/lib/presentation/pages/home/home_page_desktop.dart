@@ -115,33 +115,33 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                         )
                       ],
                     ),
-                    onTrailingWidgetPressed: () {
-                      Navigator.pushNamed(
-                        context,
-                        PortfolioPage.portfolioPageRoute,
-                      );
-                    },
-                    trailingWidget: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Text(
-                          StringConst.VIEW_PORTFOLIO,
-                          style: theme.textTheme.bodyText1!.copyWith(
-                            color: AppColors.primaryColor,
-                          ),
-                        ),
-                        SpaceW8(),
-                        const CircularContainer(
-                          color: AppColors.primaryColor,
-                          width: Sizes.WIDTH_24,
-                          height: Sizes.HEIGHT_24,
-                          child: Icon(
-                            Icons.chevron_right,
-                            color: AppColors.secondaryColor,
-                          ),
-                        )
-                      ],
-                    ),
+                    // onTrailingWidgetPressed: () {
+                    //   Navigator.pushNamed(
+                    //     context,
+                    //     PortfolioPage.portfolioPageRoute,
+                    //   );
+                    // },
+                    // trailingWidget: Row(
+                    //   mainAxisAlignment: MainAxisAlignment.end,
+                    //   children: [
+                    //     Text(
+                    //       StringConst.VIEW_PORTFOLIO,
+                    //       style: theme.textTheme.bodyText1!.copyWith(
+                    //         color: AppColors.primaryColor,
+                    //       ),
+                    //     ),
+                    //     SpaceW8(),
+                    //     const CircularContainer(
+                    //       color: AppColors.primaryColor,
+                    //       width: Sizes.WIDTH_24,
+                    //       height: Sizes.HEIGHT_24,
+                    //       child: Icon(
+                    //         Icons.chevron_right,
+                    //         color: AppColors.secondaryColor,
+                    //       ),
+                    //     )
+                    //   ],
+                    // ),
                   ),
                 ),
               ],
