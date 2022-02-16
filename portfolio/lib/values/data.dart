@@ -138,10 +138,10 @@ class Data {
     //   title: StringConst.PORTFOLIO,
     //   routeName: PortfolioPage.portfolioPageRoute,
     // ),
-//    MenuData(
-//      title: StringConst.CONTACT,
-//      routeName: ContactPage.contactPageRoute,
-//    ),
+    //    MenuData(
+    //      title: StringConst.CONTACT,
+    //      routeName: ContactPage.contactPageRoute,
+    //    ),
     // MenuData(
     //   title: StringConst.EXPERIENCE,
     //   routeName: ExperiencePage.experiencePageRoute,

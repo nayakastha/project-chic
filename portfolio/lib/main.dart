@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/app_theme.dart';
 import 'package:portfolio/presentation/routes/routes.dart';
@@ -9,6 +10,7 @@ import 'presentation/pages/home/home_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   GoogleFonts.config.allowRuntimeFetching = false;
+  setUrlStrategy(PathUrlStrategy());
   runApp(const MyApp());
 }
 
