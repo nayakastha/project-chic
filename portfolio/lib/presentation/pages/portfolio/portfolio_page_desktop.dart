@@ -257,9 +257,6 @@ class _PortfolioPageDesktopState extends State<PortfolioPageDesktop>
         _portfolioController.duration!.inMilliseconds.roundToDouble() /
             portfolioData.length;
     for (var i = 0; i < portfolioData.length; i++) {
-//      print("duration $duration");
-//      print(
-//          "duration starts from ${durationForEachPortfolio * i} and ends at ${durationForEachPortfolio * (i + 1)} ");
       double start = durationForEachPortfolio * i;
       double end = durationForEachPortfolio * (i + 1);
       widgets.add(

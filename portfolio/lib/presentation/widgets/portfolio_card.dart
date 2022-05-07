@@ -107,7 +107,7 @@ class _PortfolioCardState extends State<PortfolioCard>
                 widget.imageUrl!,
                 width: widget.width,
                 height: widget.height,
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
               ),
               _hovering
                   ? FadeTransition(
