@@ -11,7 +11,6 @@ import '../../widgets/content_wrapper.dart';
 import '../../widgets/menu_list.dart';
 import '../../widgets/spaces.dart';
 import '../../widgets/trailing_info.dart';
-import '../portfolio/portfolio_page.dart';
 import 'home_page.dart';
 
 class HomePageDesktop extends StatefulWidget {
@@ -88,10 +87,6 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                   child: TrailingInfo(
                     onLeadingWidgetPressed: () {
                       Functions.launchUrl(StringConst.EMAIL_URL);
-//                          Navigator.pushNamed(
-//                            context,
-//                            ContactPage.contactPageRoute,
-//                          );
                     },
                     leadingWidget: Row(
                       mainAxisAlignment: MainAxisAlignment.end,

@@ -101,7 +101,7 @@ class AppDrawer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  StringConst.BUILT_BY + ", " + StringConst.DESIGNED_BY,
+                  StringConst.BUILT_BY,
                   style: theme.textTheme.bodyText1!.copyWith(
                     color: AppColors.accentColor2,
                     fontSize: Sizes.TEXT_SIZE_8,

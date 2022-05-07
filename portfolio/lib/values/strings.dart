@@ -10,8 +10,8 @@ class StringConst {
 
   static const String HOME = "Home";
   static const String ABOUT_ME = "About Me";
-  static const String PORTFOLIO = "Portfolio";
-  static const String EXPERIENCE = "Experience";
+  static const String PORTFOLIO = "Project Work";
+  static const String EXPERIENCE = "Work Experience";
   static const String WORK = "Where I've Worked";
   static const String SERVICES = "Services";
   static const String CONTACT = "Contact";
@@ -40,9 +40,9 @@ class StringConst {
   static const String INTRO = "Hi, my name is";
   static const String DEV_NAME = "Astha Nayak";
   static const String PUNCH_LINE = "I build AWESOME stuff with technology";
-  static const String SPECIALITY = "FLUTTER DEV";
+  static const String SPECIALITY = "SOFTWARE DEVELOPER";
   static const String DESIGNED_IN = "Made in India with ";
-  static const String DESIGNED_BY = "Designed by Pavel G. ";
+  static const String DESIGNED_BY = "Designed with passion ";
   static const String BUILT_BY = "Built by Astha Nayak ";
 
   static const String ABOUT_DEV_TEXT =
@@ -111,63 +111,84 @@ class StringConst {
   static const String MEDIUM = "MEDIUM";
 
   //Experience
-  static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
-  static const String STARTED_MONTH_YEAR = "May 2017";
+  static const String CURRENT_MONTH_YEAR = "2022";
+  static const String STARTED_MONTH_YEAR = "2020";
 
-  static const String COMPANY_1 = "Makedu";
-  static const String COMPANY_1_URL = "https://bewsys.com/";
-  static const String POSITION_1 = "Software Engineer Intern";
+  static const String COMPANY_1 =
+      "Institute Counselling Service - NIT Rourkela";
+  static const String COMPANY_1_URL =
+      "https://github.com/dscnitrourkela/project-avocado";
+  static const String POSITION_1 = "Application Developer";
   static const String COMPANY_1_ROLE_1 =
-      "Built a Quiz app under the supervision of software engineers using PHP and Javascript";
+      "ICS Students App is an mobile application for the Institute Counselling Services, NIT Rourkela. Made by using the Flutter framework for the development of the application. This app has more than 3000 active users at any given point of time.";
   static const String COMPANY_1_ROLE_2 =
-      "Architected and implemented the Back-end and Front-end of a Web application used for receiving complaints and feedback from other live apps.";
-  static const String COMPANY_1_ROLE_3 =
-      "Learnt about Database programming and SQL";
-  static const String LOCATION_1 = "Aprade - Kumasi";
-  static const String DURATION_1 = "May 2017 - July 2017";
+      "Modularized old code bases to modern development standards and added new features to The Institute Counseling Services App for the institute students. Worked closely with other team members in troubleshooting and debugging";
+  static const String LOCATION_1 = "Rourkela, India";
+  static const String DURATION_1 = "August 2020 - Current";
 
-  static const String COMPANY_2 = "Shrinq";
-  static const String COMPANY_2_URL = "https://shrinqghana.com/";
-  static const String POSITION_2 = "Software Engineer";
+  static const String COMPANY_2 = "Khojbuy";
+  static const String COMPANY_2_URL =
+      "https://github.com/nayakastha/project-khojbuy";
+  static const String POSITION_2 = "Technical Lead";
   static const String COMPANY_2_ROLE_1 =
-      "Proposed and implemented scalable solutions to issues identified in web applications.";
+      "Khojbuy helps in finding a specific product from among the hundreds of retailers of any locality and getting it at the best possible price. It incorporates technology for making the task streamlined. It is active in 2 cities of Odisha";
   static const String COMPANY_2_ROLE_2 =
-      "Built a mobile application used to verify the authenticity of an ID to help deter fraud and provide fast and seamless customer experience";
-  static const String COMPANY_2_ROLE_3 =
-      "Developed highly interactive mobile applications for Vodafone Ghana using Java Android";
-  static const String COMPANY_2_ROLE_4 =
-      "Developed and maintained code for in-house and client applications using primarily using HTML, CSS, JavaScript, PHP and Laravel";
-  static const String LOCATION_2 = "Asylum Down - Accra";
-  static const String DURATION_2 = "April 2018 - June 2019";
+      "Designed and developed two highly interactive applications using Flutter for the front‐end and MongoDB and GraphQL for the back end service. Successfully implemented industry level code with a test‐driven approach.";
 
-  static const String COMPANY_3 = "Bewsys";
-  static const String COMPANY_3_URL = "https://bewsys.com/";
-  static const String POSITION_3 = "Software Engineer";
+  static const String LOCATION_2 = "Angul, Sambalpur - India";
+  static const String DURATION_2 = "Oct 2020 - Jul 2021";
+
+  static const String COMPANY_3 = "INDyTrends";
+  static const String COMPANY_3_URL =
+      "https://github.com/nayakastha/project-shabd";
+  static const String POSITION_3 = "Full Stack Solution Architect";
   static const String COMPANY_3_ROLE_1 =
-      "Worked with a team of two Software to build a management system for the National Prisons Service Of South Sudan";
+      "This project solves the problem of language barrier in news headlines. With localisation of News into the Indian languages this project aims to reach the interior parts of India and provide the people with current affairs";
   static const String COMPANY_3_ROLE_2 =
-      "Interfaced with clients on a weekly basis, providing technological expertise";
-  static const String COMPANY_3_ROLE_3 =
-      "Modified existing software to correct errors, upgrade interfaces and improve performance";
-  static const String COMPANY_3_ROLE_4 =
-      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across web and mobile applications.";
-  static const String LOCATION_3 = "East Legon - Accra";
-  static const String DURATION_3 = "August 2019 - April 2020";
+      "Brainstormed and facilitated the development of the front‐end in accordance with the machine learning model and database management system. Emphasised on the user experience for the application.";
+  static const String LOCATION_3 = " New Delhi, India";
+  static const String DURATION_3 = "Oct 2021 - Jan 2022";
 
-  static const String COMPANY_4 = "Freelancer";
-  static const String COMPANY_4_URL = SITE_URL;
-  static const String POSITION_4 = "Software Engineer";
+  static const String COMPANY_4 = "HackNITR 3.0";
+  static const String COMPANY_4_URL = "https://hacknitr.tech";
+  static const String POSITION_4 = "Lead Organiser";
   static const String COMPANY_4_ROLE_1 =
-      "Work collaboratively with a user experience designer to bring mobile and progressive apps to life using Flutter.";
+      "HackNITR 3.0 - the largest student-run hackathon of India with more than 2,500 participants from all over the world. It provided a platform for all the participants to showcase their skills and ideas.";
   static const String COMPANY_4_ROLE_2 =
-      "Write modern, performant, maintainable code for a clients and personal open source projects";
-  static const String COMPANY_4_ROLE_3 =
-      "Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, JavaScript, PHP, Flutter, Laravel, Wordpress, and Bootstrap";
-  static const String COMPANY_4_ROLE_4 =
-      "Interface with clients and provide technological expertise";
-  static const String LOCATION_4 = "Santase - Kumasi";
-  static const String DURATION_4 = "May 2020 - Current";
+      "Lead a team of 40 organisers, facilitated talks with guest speakers, sponsors and participants to smoothly conduct HackNITR 3.0";
+  static const String LOCATION_4 = " India";
+  static const String DURATION_4 = "July 2021 - Nov 2021";
 
+  static const String COMPANY_5 = "Android Study Jam";
+  static const String COMPANY_5_URL =
+      "https://drive.google.com/file/d/16dUCv9qftD8cjDrR-GDTfq8I3nrXIvHd/view?usp=sharing";
+  static const String POSITION_5 = "Education Facilitator";
+  static const String COMPANY_5_ROLE_1 =
+      "The Android Study Jams program is an opportunity for you to organize a study group for members of your chapter to learn how to build Android apps in the Kotlin programming language, using the curriculum provided by Google";
+  static const String COMPANY_5_ROLE_2 =
+      "During this campaign, I helped around 20 students to build their own apps using the Kotlin programming language and start their android development journey.";
+  static const String LOCATION_5 = "NIT Rourkela, India";
+  static const String DURATION_5 = "Dec 2021 - Feb 2022";
+
+  static const String COMPANY_6 = "Flutter Festivals";
+  static const String COMPANY_6_URL = "";
+  static const String POSITION_6 = "Lead Facilitator";
+  static const String COMPANY_6_ROLE_1 =
+      "Flutter Festivals is a community led event series where developers can join to learn the fundamentals of Google technologies. - featuring Flutter, Firebase and Google Cloud content.";
+  static const String COMPANY_6_ROLE_2 =
+      "This gave me a opportunity to teach Flutter and help students learn cross platform app development using Flutter.";
+  static const String LOCATION_6 = "NIT Rourkela, India";
+  static const String DURATION_6 = "Mar 2022 - Apr 2022";
+
+  static const String COMPANY_7 = "Career Development Centre, NIT Rourkela";
+  static const String COMPANY_7_URL = "https://www.nitrkl.ac.in/Placement/";
+  static const String POSITION_7 = "Placement Coordinator";
+  static const String COMPANY_7_ROLE_1 =
+      "The Career Development Centre of the Institute centrally helps in constituting the job carrier for the graduating students of all Departments";
+  static const String COMPANY_7_ROLE_2 =
+      "Placement Coordinator contact the companies and invite them to campus . They are also responsible for hospitality of the company and conduct the placement drive smoothly. They act as a link between company and students. Placement Coordinator also manage the database of students and give them to company";
+  static const String LOCATION_7 = "NIT Rourkela, India";
+  static const String DURATION_7 = "May 2022 - Current";
   //Portfolio, Projects
   static const String LOGIN_CATALOG = "Login Catalog";
   static const String LOGIN_CATALOG_SUBTITLE =

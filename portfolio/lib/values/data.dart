@@ -134,18 +134,14 @@ class Data {
   static List<MenuData> menuList = [
     MenuData(title: StringConst.HOME, routeName: HomePage.homePageRoute),
     MenuData(title: StringConst.ABOUT_ME, routeName: AboutPage.aboutPageRoute),
-    // MenuData(
-    //   title: StringConst.PORTFOLIO,
-    //   routeName: PortfolioPage.portfolioPageRoute,
-    // ),
-    //    MenuData(
-    //      title: StringConst.CONTACT,
-    //      routeName: ContactPage.contactPageRoute,
-    //    ),
-    // MenuData(
-    //   title: StringConst.EXPERIENCE,
-    //   routeName: ExperiencePage.experiencePageRoute,
-    // ),
+    MenuData(
+      title: StringConst.PORTFOLIO,
+      routeName: PortfolioPage.portfolioPageRoute,
+    ),
+    MenuData(
+      title: StringConst.EXPERIENCE,
+      routeName: ExperiencePage.experiencePageRoute,
+    ),
     MenuData(title: StringConst.RESUME, routeName: StringConst.RESUME),
   ];
 
@@ -295,17 +291,37 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
-      company: StringConst.COMPANY_4,
-      position: StringConst.POSITION_4,
-      companyUrl: StringConst.COMPANY_4_URL,
+      company: StringConst.COMPANY_7,
+      position: StringConst.POSITION_7,
+      companyUrl: StringConst.COMPANY_7_URL,
       roles: [
-        StringConst.COMPANY_4_ROLE_1,
-        StringConst.COMPANY_4_ROLE_2,
-        StringConst.COMPANY_4_ROLE_3,
-        StringConst.COMPANY_4_ROLE_4,
+        StringConst.COMPANY_7_ROLE_1,
+        StringConst.COMPANY_7_ROLE_2,
       ],
-      location: StringConst.LOCATION_4,
-      duration: StringConst.DURATION_4,
+      location: StringConst.LOCATION_7,
+      duration: StringConst.DURATION_7,
+    ),
+    ExperienceData(
+      company: StringConst.COMPANY_6,
+      position: StringConst.POSITION_6,
+      companyUrl: StringConst.COMPANY_6_URL,
+      roles: [
+        StringConst.COMPANY_6_ROLE_1,
+        StringConst.COMPANY_6_ROLE_2,
+      ],
+      location: StringConst.LOCATION_6,
+      duration: StringConst.DURATION_6,
+    ),
+    ExperienceData(
+      company: StringConst.COMPANY_5,
+      position: StringConst.POSITION_5,
+      companyUrl: StringConst.COMPANY_5_URL,
+      roles: [
+        StringConst.COMPANY_5_ROLE_1,
+        StringConst.COMPANY_5_ROLE_2,
+      ],
+      location: StringConst.LOCATION_5,
+      duration: StringConst.DURATION_5,
     ),
     ExperienceData(
       company: StringConst.COMPANY_3,
@@ -314,11 +330,20 @@ class Data {
       roles: [
         StringConst.COMPANY_3_ROLE_1,
         StringConst.COMPANY_3_ROLE_2,
-        StringConst.COMPANY_3_ROLE_3,
-        StringConst.COMPANY_3_ROLE_4,
       ],
       location: StringConst.LOCATION_3,
       duration: StringConst.DURATION_3,
+    ),
+    ExperienceData(
+      company: StringConst.COMPANY_4,
+      position: StringConst.POSITION_4,
+      companyUrl: StringConst.COMPANY_4_URL,
+      roles: [
+        StringConst.COMPANY_4_ROLE_1,
+        StringConst.COMPANY_4_ROLE_2,
+      ],
+      location: StringConst.LOCATION_4,
+      duration: StringConst.DURATION_4,
     ),
     ExperienceData(
       company: StringConst.COMPANY_2,
@@ -327,8 +352,6 @@ class Data {
       roles: [
         StringConst.COMPANY_2_ROLE_1,
         StringConst.COMPANY_2_ROLE_2,
-        StringConst.COMPANY_2_ROLE_3,
-        StringConst.COMPANY_2_ROLE_4,
       ],
       location: StringConst.LOCATION_2,
       duration: StringConst.DURATION_2,
@@ -340,7 +363,6 @@ class Data {
       roles: [
         StringConst.COMPANY_1_ROLE_1,
         StringConst.COMPANY_1_ROLE_2,
-        StringConst.COMPANY_1_ROLE_3,
       ],
       location: StringConst.LOCATION_1,
       duration: StringConst.DURATION_1,

@@ -71,7 +71,7 @@ class MenuList extends StatelessWidget {
         Wrap(
           children: [
             Text(
-              StringConst.BUILT_BY + ", " + StringConst.DESIGNED_BY,
+              StringConst.BUILT_BY,
               style: theme.textTheme.bodyText1!.copyWith(
                 color: AppColors.secondaryColor,
                 fontSize: Sizes.TEXT_SIZE_10,
