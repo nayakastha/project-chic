@@ -181,6 +181,45 @@ class Data {
     ),
   ];
   static List<PortfolioData> portfolioData = [
+    //Avenue
+    PortfolioData(
+      title: StringConst.PROJECT_3,
+      subtitle: StringConst.PROJECT_3_SUBTITLE,
+      image: ImagePath.PROJECT_3,
+      portfolioDescription: StringConst.PROJECT_3_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      isLive: false,
+      gitHubUrl: StringConst.PROJECT_3_GITHUB_URL,
+      technologyUsed: StringConst.PROJECT_3_TECHNOLOGIES,
+    ),
+
+    //Applocker
+    PortfolioData(
+      title: StringConst.PROJECT_4,
+      subtitle: StringConst.PROJECT_4_SUBTITLE,
+      image: ImagePath.PROJECT_4,
+      portfolioDescription: StringConst.PROJECT_4_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      gitHubUrl: StringConst.PROJECT_4_GITHUB_URL,
+      technologyUsed: StringConst.PROJECT_4_TECHNOLOGIES,
+    ),
+
+    //Aptiche
+    PortfolioData(
+      title: StringConst.PROJECT_5,
+      subtitle: StringConst.PROJECT_5_SUBTITLE,
+      image: ImagePath.PROJECT_5,
+      portfolioDescription: StringConst.PROJECT_5_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      isOnPlayStore: true,
+      gitHubUrl: StringConst.PROJECT_5_GITHUB_URL,
+      technologyUsed: StringConst.PROJECT_5_TECHNOLOGIES,
+      playStoreUrl: StringConst.PROJECT_5_PLAYSTORE,
+    ),
+
     //ICS App
     PortfolioData(
       title: StringConst.PROJECT_1,
@@ -194,6 +233,7 @@ class Data {
       technologyUsed: StringConst.PROJECT_1_TECHNOLOGIES,
       gitHubUrl: StringConst.PROJECT_1_GITHUB_URL,
     ),
+
     //Portfolio Website
     PortfolioData(
       title: StringConst.PROJECT_2,
@@ -207,7 +247,51 @@ class Data {
       technologyUsed: StringConst.PROJECT_2_TECHNOLOGIES,
       gitHubUrl: StringConst.PROJECT_2_GITHUB_URL,
       webUrl: StringConst.PROJECT_2_DEMO,
-    )
+    ),
+
+    //pallisadoes
+    PortfolioData(
+      title: StringConst.PROJECT_6,
+      subtitle: StringConst.PROJECT_6_SUBTITLE,
+      image: ImagePath.PROJECT_6,
+      portfolioDescription: StringConst.PROJECT_6_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      isLive: true,
+      webUrl: StringConst.PROJECT_6_DEMO_URL,
+      technologyUsed: StringConst.PROJECT_6_TECHNOLOGIES,
+      gitHubUrl: StringConst.PROJECT_6_GITHUB_URL,
+    ),
+
+    //khojbuy
+    PortfolioData(
+      title: StringConst.PROJECT_7,
+      subtitle: StringConst.PROJECT_7_SUBTITLE,
+      image: ImagePath.PROJECT_7,
+      portfolioDescription: StringConst.PROJECT_7_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      isLive: true,
+      isOnPlayStore: true,
+      playStoreUrl: StringConst.PROJECT_7_PLAYSTORE,
+      webUrl: StringConst.PROJECT_7_DEMO_URL,
+      technologyUsed: StringConst.PROJECT_7_TECHNOLOGIES,
+      gitHubUrl: StringConst.PROJECT_7_GITHUB_URL,
+    ),
+
+    //qrscangen
+    PortfolioData(
+      title: StringConst.PROJECT_8,
+      subtitle: StringConst.PROJECT_8_SUBTITLE,
+      image: ImagePath.PROJECT_8,
+      portfolioDescription: StringConst.PROJECT_8_DETAIL,
+      imageSize: 0.2,
+      isPublic: true,
+      isOnPlayStore: true,
+      playStoreUrl: StringConst.PROJECT_8_PLAYSTORE,
+      gitHubUrl: StringConst.PROJECT_8_GITHUB_URL,
+      technologyUsed: StringConst.PROJECT_8_TECHNOLOGIES,
+    ),
   ];
 
   static List<ExperienceData> experienceData = [

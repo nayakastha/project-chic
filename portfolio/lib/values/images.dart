@@ -12,16 +12,12 @@ class ImagePath {
 
   static const String PROJECT_1 = "$imageDir/project1.png";
   static const String PROJECT_2 = "$imageDir/project2.png";
-  static const String VYBZ = "$imageDir/vybz.jpg";
-  static const String COLOSSAL_TOONS = "$imageDir/colossal_toons.jpg";
-  static const String LOGIN_CATALOG = "$imageDir/login_catalog.jpg";
-  static const String ONBOARDING_APP = "$imageDir/onboarding_app.jpg";
-  static const String FOODY_BITE = "$imageDir/foodybite.jpg";
-  static const String OTP_TEXT_FIELD = "$imageDir/otp_package.jpg";
-  static const String FINOPP = "$imageDir/finopp.jpg";
-  static const String BEQUIP_LOGISTICS = "$imageDir/bequip_logistics.jpg";
-  static const String AERIUM = "$imageDir/aerium.jpg";
-  static const String LEARN_UPP = "$imageDir/learn_upp.jpg";
+  static const String PROJECT_3 = "$imageDir/project3.png";
+  static const String PROJECT_4 = "$imageDir/project4.png";
+  static const String PROJECT_5 = "$imageDir/project5.png";
+  static const String PROJECT_6 = "$imageDir/project6.png";
+  static const String PROJECT_7 = "$imageDir/project7.png";
+  static const String PROJECT_8 = "$imageDir/project8.png";
 
   static const String PLAYSTORE = "$imageDir/playstore.png";
 //  static const String FLUTTER_CATALOG = "$imageDir/onboarding_app.png";

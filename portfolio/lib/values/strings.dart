@@ -191,7 +191,6 @@ class StringConst {
   static const String DURATION_7 = "May 2022 - Current";
 
   //Portfolio, Projects
-  // ICS App, portfolio, elaichi, applocker, aptiche, alohomora, pallisadoes, shabd, khojbuy, qr scangen
   static const String PROJECT_1 = "Institute Counseling Services App";
   static const String PROJECT_1_SUBTITLE = "project-avocado";
   static const String PROJECT_1_DETAIL =
@@ -211,6 +210,67 @@ class StringConst {
       "https://github.com/nayakastha/portfolio";
   static const String PROJECT_2_DEMO = "https://asthanayak.tech";
   static const String PROJECT_2_TECHNOLOGIES = "Flutter";
+
+  static const String PROJECT_3 = "NITR Avenue";
+  static const String PROJECT_3_SUBTITLE = "project-elaichi";
+  static const String PROJECT_3_DETAIL =
+      "A goto app for the students of NIT Rourkela. This application simplifies the life of many students by providing features such as campus guide, news updates, zimbra mail, time table, and much more.";
+  static const String PROJECT_3_GITHUB_URL =
+      "https://github.com/dscnitrourkela/project-elaichi";
+  static const String PROJECT_3_TECHNOLOGIES =
+      "Flutter, Google Cloud, TypeScript, NodeJS, GraphQL";
+
+  static const String PROJECT_4 = "AppLocker";
+  static const String PROJECT_4_SUBTITLE = "project-applocker";
+  static const String PROJECT_4_DETAIL =
+      "A concept app that uses Jetpack Security to encrypt user data such as text files or images using Encrypted Shared Preferences and uses Biometrics for authentication. This is build during Android Study Jam 2021 by GDSC NIT Rourkela.";
+  static const String PROJECT_4_GITHUB_URL =
+      "https://github.com/nayakastha/project-applocker";
+  static const String PROJECT_4_TECHNOLOGIES =
+      "Android, MVVM, Biometrics, Jetpack-Compose";
+
+  static const String PROJECT_5 = "Aptiche";
+  static const String PROJECT_5_SUBTITLE = "project-maple";
+  static const String PROJECT_5_DETAIL =
+      "AptiChe is an initiative by the AIChE NITR student chapter in association with Google Developers Students Club, NITR to provide an opportunity to the students to practice and showcase their aptitude and reasoning skills. With aptitude tests being part of every competitive exam, it becomes essential for every aspirant to excel in their aptitude and reasoning skills. Apti-Che is created to increase your competence skills. It's designed to conduct aptitude tests free for students.";
+  static const String PROJECT_5_GITHUB_URL =
+      "https://github.com/dscnitrourkela/project-maple";
+  static const String PROJECT_5_TECHNOLOGIES =
+      "Flutter, GraphQL, MongoDB, NodeJS";
+  static const String PROJECT_5_PLAYSTORE =
+      "https://play.google.com/store/apps/details?id=org.dscnitrourkela.aptiche";
+
+  static const String PROJECT_6 = "Talawa (Pallisadoes Organisation)";
+  static const String PROJECT_6_SUBTITLE = "project-talawa";
+  static const String PROJECT_6_DETAIL =
+      "Talawa is a modular open source project to manage group activities of both non-profit organizations and businesses. Core features include: Membership management, Groups management, Event registrations, Recurring meetings, Facilities registrations";
+  static const String PROJECT_6_GITHUB_URL =
+      "https://github.com/PalisadoesFoundation/talawa";
+  static const String PROJECT_6_TECHNOLOGIES = "Flutter, Python, Django";
+  static const String PROJECT_6_DEMO_URL =
+      "https://palisadoesfoundation.github.io/talawa-docs/";
+
+  static const String PROJECT_7 = "Khojbuy";
+  static const String PROJECT_7_SUBTITLE = "project-khojbuy";
+  static const String PROJECT_7_DETAIL =
+      "Finding a specific product from among the hundreds of retailers of your locality can be painstaking, and getting it at the best possible price, almost impossible. We incorporate technology here, making the task much more streamlined for the fast-forward customers of today. The app gives you a platform where you can get the varied categories and the sellers under those, who can be contacted for a particular product and ask them the prices, thus also giving an opportunity to compare prices, without actually visiting stores, and at your comfort and convenience.";
+  static const String PROJECT_7_GITHUB_URL =
+      "https://github.com/Khojbuy/project-khojbuy";
+  static const String PROJECT_7_TECHNOLOGIES =
+      "Flutter, Firebase, NodeJS, GraphQL, MongoDB";
+  static const String PROJECT_7_DEMO_URL = "https://khojbuy.com/";
+  static const String PROJECT_7_PLAYSTORE =
+      "https://play.google.com/store/apps/details/?id=com.khojbuy.Khojbuy";
+
+  static const String PROJECT_8 = "QR SCANGEN";
+  static const String PROJECT_8_SUBTITLE = "project-scan";
+  static const String PROJECT_8_DETAIL =
+      "QR SCANGEN is a QR code scanning app that scans QR codes and returns the content of the QR code. It is a simple app that can be used for any purpose.";
+  static const String PROJECT_8_GITHUB_URL =
+      "https://github.com/nayakastha/project-scan";
+  static const String PROJECT_8_TECHNOLOGIES = "Flutter";
+  static const String PROJECT_8_PLAYSTORE =
+      "https://play.google.com/store/apps/details?id=a.n.qrscangen";
 
   static const String CIRCE = "Circe";
   static const String PROXIMA_NOVA = "ProximaNova";
