@@ -194,6 +194,20 @@ class Data {
       technologyUsed: StringConst.PROJECT_1_TECHNOLOGIES,
       gitHubUrl: StringConst.PROJECT_1_GITHUB_URL,
     ),
+    //Portfolio Website
+    PortfolioData(
+      title: StringConst.PROJECT_2,
+      subtitle: StringConst.PROJECT_2_SUBTITLE,
+      image: ImagePath.PROJECT_2,
+      portfolioDescription: StringConst.PROJECT_2_DETAIL,
+      imageSize: 0.41,
+      isPublic: true,
+      hasBeenReleased: true,
+      isLive: true,
+      technologyUsed: StringConst.PROJECT_2_TECHNOLOGIES,
+      gitHubUrl: StringConst.PROJECT_2_GITHUB_URL,
+      webUrl: StringConst.PROJECT_2_DEMO,
+    )
   ];
 
   static List<ExperienceData> experienceData = [
