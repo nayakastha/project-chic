@@ -238,7 +238,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
     return Row(
       children: [
         ProjectCover2(
-          width: assignWidth(context: context, fraction: 0.30),
+          width: assignWidth(context: context, fraction: 0.3),
           height: heightOfScreen(context),
           offset: offset,
           projectCoverScale: _projectCoverScaleAnimation.value,

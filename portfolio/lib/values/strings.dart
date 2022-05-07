@@ -198,8 +198,19 @@ class StringConst {
       "ICS Students App is an mobile application for the Institute Counselling Services, NIT Rourkela. Made by using the Flutter framework for the development of the application. This app has more than 3000 active users at any given point of time.";
   static const String PROJECT_1_GITHUB_URL =
       "https://github.com/dscnitrourkela/project-avocado";
+  static const String PROJECT_1_PLAYSTORE =
+      "https://play.google.com/store/apps/details?id=in.ac.nitrkl.scp.scp";
   static const String PROJECT_1_TECHNOLOGIES =
       "Flutter, Firebase, Google Cloud Platform";
+
+  static const String PROJECT_2 = "Personal Portfolio";
+  static const String PROJECT_2_SUBTITLE = "portfolio";
+  static const String PROJECT_2_DETAIL =
+      "This is my personal portfolio website. It is made using the Flutter framework. Responsive design is the key feature of this website. Built in template style for anyone to use and modify it as per their necessities";
+  static const String PROJECT_2_GITHUB_URL =
+      "https://github.com/nayakastha/portfolio";
+  static const String PROJECT_2_DEMO = "https://asthanayak.tech";
+  static const String PROJECT_2_TECHNOLOGIES = "Flutter";
 
   static const String CIRCE = "Circe";
   static const String PROXIMA_NOVA = "ProximaNova";

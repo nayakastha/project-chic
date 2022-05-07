@@ -298,7 +298,7 @@ class _PortfolioPageDesktopState extends State<PortfolioPageDesktop>
             },
             height: isDisplaySmallDesktopOrIpadPro(context)
                 ? assignHeight(context: context, fraction: 0.3)
-                : assignHeight(context: context, fraction: 0.45),
+                : assignHeight(context: context, fraction: 0.48),
             width: isDisplaySmallDesktopOrIpadPro(context)
                 ? assignWidth(
                     context: context,
