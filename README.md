@@ -3,11 +3,13 @@
 
 This repo contains an easy-to-customize personal dev portfolio template that was created with Flutter. It is lightweight and fully responsive, as well as comes loaded with awesome modern user interface. The site is static and comes production ready if you just want to add your information and go. Alternatively, you can edit styles, colours, and scripts fairly easily. The site was built as modular as possible to make it easy to shift around styles and content.
 
+![Demo Image](portfolio/assets/images/project2.png)
+
 ## Features
-Fully responsive
-Modern User Interface
-Customisable Template
-Lightweight
+- Fully responsive
+- Modern User Interface
+- Customisable Template
+- Lightweight
 
 ## Setup and Configuration
 The setup required can be broken into two types:
