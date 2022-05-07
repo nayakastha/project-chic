@@ -279,13 +279,24 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                             ),
                           ),
                           SpaceH8(),
-                          Text(
-                            StringConst.BUILT_WITH +
+                          Row(
+                            children: [
+                              Text(
+                                StringConst.BUILT_WITH,
+                                style: theme.textTheme.headline6!.copyWith(
+                                  color: AppColors.primaryColor,
+                                  fontSize: Sizes.TEXT_SIZE_14,
+                                ),
+                              ),
+                              Text(
                                 widget.projectDetails!.technologyUsed!,
-                            style: theme.textTheme.headline6!.copyWith(
-                              color: AppColors.primaryColor,
-                              fontSize: Sizes.TEXT_SIZE_14,
-                            ),
+                                maxLines: 3,
+                                style: theme.textTheme.headline6!.copyWith(
+                                  color: AppColors.primaryColor,
+                                  fontSize: Sizes.TEXT_SIZE_16,
+                                ),
+                              ),
+                            ],
                           ),
                           SpaceH8(),
                           !widget.projectDetails!.hasBeenReleased!
