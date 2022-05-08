@@ -33,20 +33,6 @@ class ProjectCover extends StatelessWidget {
       height: height,
       child: Stack(
         children: [
-          // Positioned(
-          //   top: offset,
-          //   right: offset,
-          //   child: Transform.scale(
-          //     scale: backgroundScale,
-          //     origin: origin,
-          //     alignment: alignment,
-          //     child: Container(
-          //       width: width! - offset!,
-          //       height: height! - offset!,
-          //       color: projectCoverBackgroundColor,
-          //     ),
-          //   ),
-          // ),
           Positioned(
             child: Transform.scale(
               scale: projectCoverScale,
@@ -56,7 +42,7 @@ class ProjectCover extends StatelessWidget {
                 projectCoverUrl!,
                 width: width! - offset!,
                 height: height! - offset!,
-                fit: BoxFit.cover,
+                fit: BoxFit.contain,
               ),
             ),
           ),
