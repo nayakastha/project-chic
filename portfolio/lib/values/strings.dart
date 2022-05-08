@@ -203,11 +203,11 @@ class StringConst {
       "Flutter, Firebase, Google Cloud Platform";
 
   static const String PROJECT_2 = "Personal Portfolio";
-  static const String PROJECT_2_SUBTITLE = "portfolio";
+  static const String PROJECT_2_SUBTITLE = "project-chic";
   static const String PROJECT_2_DETAIL =
       "This is my personal portfolio website. It is made using the Flutter framework. Responsive design is the key feature of this website. Built in template style for anyone to use and modify it as per their necessities";
   static const String PROJECT_2_GITHUB_URL =
-      "https://github.com/nayakastha/portfolio";
+      "https://github.com/nayakastha/project-chic";
   static const String PROJECT_2_DEMO = "https://asthanayak.tech";
   static const String PROJECT_2_TECHNOLOGIES = "Flutter";
 
