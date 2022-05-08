@@ -164,7 +164,7 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
       ),
     );
     heightPositionOfImage = Tween<double>(
-      begin: 0.4,
+      begin: 0.05,
       end: 0.05,
     ).animate(
       CurvedAnimation(
@@ -177,8 +177,8 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
       ),
     );
     scale = Tween<double>(
-      begin: 1.5,
-      end: 1.0,
+      begin: 0.918,
+      end: 0.9,
     ).animate(
       CurvedAnimation(
         parent: _controller,
@@ -305,28 +305,28 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
             )
           ],
         ),
-        // Transform.translate(
-        //   offset: Offset(
-        //     assignWidth(
-        //             context: context, fraction: widthPositionOfImage.value) -
-        //         widthOfImage! / 2,
-        //     assignHeight(
-        //         context: context, fraction: heightPositionOfImage.value),
-        //   ),
-        //   child: Transform.scale(
-        //     scale: scale.value,
-        //     child: isDisplaySmallDesktopOrIpadPro(context)
-        //         ? Container(
-        //             width: widthOfImage,
-        //           )
-        //         : Image.asset(
-        //             ImagePath.DEV,
-        //             width: widthOfImage,
-        //             height: heightOfImage,
-        //             fit: BoxFit.cover,
-        //           ),
-        //   ),
-        // ),
+        Transform.translate(
+          offset: Offset(
+            assignWidth(
+                    context: context, fraction: widthPositionOfImage.value) -
+                widthOfImage! / 2,
+            assignHeight(
+                context: context, fraction: heightPositionOfImage.value),
+          ),
+          child: Transform.scale(
+            scale: scale.value,
+            child: isDisplaySmallDesktopOrIpadPro(context)
+                ? Container(
+                    width: widthOfImage,
+                  )
+                : Image.asset(
+                    ImagePath.DEV,
+                    width: widthOfImage,
+                    height: heightOfImage,
+                    fit: BoxFit.cover,
+                  ),
+          ),
+        ),
       ],
     );
   }

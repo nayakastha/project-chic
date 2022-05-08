@@ -8,7 +8,7 @@ class ImagePath {
   static const String screenshotsDir = "assets/screenshots";
 
   //Images
-  static const String DEV = "$imageDir/astha.png";
+  static const String DEV = "$imageDir/dev.png";
 
   static const String PROJECT_1 = "$imageDir/project1.png";
   static const String PROJECT_2 = "$imageDir/project2.png";
@@ -20,11 +20,4 @@ class ImagePath {
   static const String PROJECT_8 = "$imageDir/project8.png";
 
   static const String PLAYSTORE = "$imageDir/playstore.png";
-//  static const String FLUTTER_CATALOG = "$imageDir/onboarding_app.png";
-
-  //Certifications
-  static const String ANDROID_BASICS_CERT = "$imageDir/android_basics_cert.png";
-  static const String ASSOCIATE_ANDROID_DEV =
-      "$imageDir/associate_android_dev.png";
-  static const String DATA_SCIENCE_CERT = "$imageDir/data_science_cert.png";
 }
