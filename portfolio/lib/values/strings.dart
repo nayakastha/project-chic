@@ -191,7 +191,7 @@ class StringConst {
   static const String DURATION_7 = "May 2022 - Current";
 
   //Portfolio, Projects
-  static const String PROJECT_1 = "Institute Counseling Services App";
+  static const String PROJECT_1 = "Institute Counselling Services App";
   static const String PROJECT_1_SUBTITLE = "project-avocado";
   static const String PROJECT_1_DETAIL =
       "ICS Students App is an mobile application for the Institute Counselling Services, NIT Rourkela. Made by using the Flutter framework for the development of the application. This app has more than 3000 active users at any given point of time.";
