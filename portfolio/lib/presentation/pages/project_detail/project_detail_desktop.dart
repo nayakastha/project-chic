@@ -264,7 +264,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                       controller: _flickerAnimationController.view,
                     )
                   : Container(),
-              SpaceH16(),
+              const SpaceH16(),
               _isContentVisible
                   ? FadeTransition(
                       opacity: _projectContentAnimation,
@@ -278,7 +278,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                               fontSize: Sizes.TEXT_SIZE_16,
                             ),
                           ),
-                          SpaceH8(),
+                          const SpaceH8(),
                           Row(
                             children: [
                               Text(
@@ -298,7 +298,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                               ),
                             ],
                           ),
-                          SpaceH8(),
+                          const SpaceH8(),
                           !widget.projectDetails!.hasBeenReleased!
                               ? Text(
                                   StringConst.COMING_SOON,
@@ -309,7 +309,7 @@ class _ProjectDetailDesktopState extends State<ProjectDetailDesktop>
                                 )
                               : Container(),
                           !widget.projectDetails!.hasBeenReleased!
-                              ? SpaceH8()
+                              ? const SpaceH8()
                               : Container(),
                           Wrap(
                             direction: Axis.horizontal,

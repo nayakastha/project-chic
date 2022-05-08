@@ -51,7 +51,7 @@ class ExperienceSection extends StatelessWidget {
                     color: AppColors.primaryColor,
                   ),
             ),
-            SpaceW4(),
+            const SpaceW4(),
             InkWell(
               onTap: onTap ?? (() => Functions.launchUrl(companyUrl!)),
               child: Text(
@@ -73,7 +73,7 @@ class ExperienceSection extends StatelessWidget {
                 color: AppColors.accentColor,
               ),
         ),
-        SpaceH4(),
+        const SpaceH4(),
         Text(
           duration,
           style: durationTextStyle ??
@@ -82,7 +82,7 @@ class ExperienceSection extends StatelessWidget {
                 color: AppColors.accentColor,
               ),
         ),
-        SpaceH16(),
+        const SpaceH16(),
         ..._buildRoles(roles),
       ],
     );
@@ -92,7 +92,7 @@ class ExperienceSection extends StatelessWidget {
     List<Widget> roleWidgets = [];
     for (var index = 0; index < roles.length; index++) {
       roleWidgets.add(Role(role: roles[index]));
-      roleWidgets.add(SpaceH8());
+      roleWidgets.add(const SpaceH8());
     }
 
     return roleWidgets;
@@ -125,7 +125,7 @@ class Role extends StatelessWidget {
           size: iconSize,
           color: color,
         ),
-        SpaceW8(),
+        const SpaceW8(),
         Expanded(
           child: Text(
             role,

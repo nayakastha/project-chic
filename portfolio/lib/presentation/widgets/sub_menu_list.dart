@@ -110,7 +110,7 @@ class _SubMenuListState extends State<SubMenuList>
               ],
             ),
           ),
-          SpaceH16(),
+          const SpaceH16(),
           _isSkillsVisible ? _buildContent(widget.subMenuData) : Container(),
         ],
       ),
@@ -141,7 +141,7 @@ class _SubMenuListState extends State<SubMenuList>
           ),
         ),
       );
-      menuList.add(SpaceW24());
+      menuList.add(const SpaceW24());
     }
     return menuList;
   }
@@ -180,7 +180,9 @@ class _SubMenuListState extends State<SubMenuList>
 
   _onMenuChange(int index) {
     setState(() {
-      widget.subMenuData.forEach((element) => element.isSelected = false);
+      for (var element in widget.subMenuData) {
+        element.isSelected = false;
+      }
       widget.subMenuData[index].isSelected = true;
     });
   }

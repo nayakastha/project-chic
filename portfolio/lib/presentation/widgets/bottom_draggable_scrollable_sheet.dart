@@ -54,14 +54,14 @@ class _BottomDraggableScrollableSheetState
             controller: scrollController,
             child: Column(
               children: [
-                SpaceH8(),
+                const SpaceH8(),
                 const HorizontalBar(
                   color: AppColors.secondaryColor,
                   margin: EdgeInsets.only(right: 8),
                   width: 40,
                   height: 2,
                 ),
-                SpaceH8(),
+                const SpaceH8(),
                 IntrinsicHeight(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

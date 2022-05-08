@@ -74,7 +74,7 @@ class SkillLevel extends StatelessWidget {
               );
             },
           ),
-          SpaceW8(),
+          const SpaceW8(),
           Expanded(
             child: Text(
               skillName,

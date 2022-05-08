@@ -206,7 +206,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
           projectCoverBackgroundColor: AppColors.primaryColor,
           projectCoverUrl: widget.projectDetails!.projectImage,
         ),
-        SpaceH12(),
+        const SpaceH12(),
         _isHeadingVisible
             ? FlickerTextAnimation(
                 text: widget.projectDetails!.projectName,
@@ -216,7 +216,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                 controller: _flickerAnimationController.view,
               )
             : Container(),
-        SpaceH16(),
+        const SpaceH16(),
         _isContentVisible
             ? FadeTransition(
                 opacity: _projectContentAnimation,
@@ -230,7 +230,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                         fontSize: Sizes.TEXT_SIZE_16,
                       ),
                     ),
-                    SpaceH8(),
+                    const SpaceH8(),
                     Text(
                       StringConst.BUILT_WITH +
                           widget.projectDetails!.technologyUsed!,
@@ -239,7 +239,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                         fontSize: Sizes.TEXT_SIZE_14,
                       ),
                     ),
-                    SpaceH8(),
+                    const SpaceH8(),
                     !widget.projectDetails!.hasBeenReleased!
                         ? Text(
                             StringConst.COMING_SOON,
@@ -250,7 +250,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
                           )
                         : Container(),
                     !widget.projectDetails!.hasBeenReleased!
-                        ? SpaceH8()
+                        ? const SpaceH8()
                         : Container(),
                     Wrap(
                       spacing: 8,

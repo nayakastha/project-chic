@@ -48,7 +48,7 @@ class CustomScroller extends StatelessWidget {
                   const Icon(Icons.keyboard_arrow_up,
                       color: AppColors.secondaryColor),
             ),
-            SpaceH8(),
+            const SpaceH8(),
             centerChild ??
                 ClipRRect(
                   borderRadius: BorderRadius.circular(4),
@@ -58,7 +58,7 @@ class CustomScroller extends StatelessWidget {
                     color: scrollCenterColor,
                   ),
                 ),
-            SpaceH8(),
+            const SpaceH8(),
             InkWell(
               onTap: onDownTap,
               child: bottomController ??

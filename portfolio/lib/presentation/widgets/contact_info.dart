@@ -42,7 +42,7 @@ class ContactInfo extends StatelessWidget {
                 color: AppColors.accentColor2,
               ),
         ),
-        SpaceH4(),
+        const SpaceH4(),
         InkWell(
           onTap: onTap,
           child: Row(
@@ -53,7 +53,7 @@ class ContactInfo extends StatelessWidget {
                 color: iconColor,
                 size: iconSize,
               ),
-              SpaceW4(),
+              const SpaceW4(),
               Text(
                 contact,
                 style: contactTextStyle ??

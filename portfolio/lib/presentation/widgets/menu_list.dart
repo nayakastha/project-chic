@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/presentation/widgets/spaces.dart';
 
 import '../../core/utils/functions.dart';
@@ -28,7 +27,7 @@ class MenuList extends StatelessWidget {
         const Spacer(
           flex: 1,
         ),
-        Socials(
+        const Socials(
           isVertical: true,
           alignment: Alignment.centerLeft,
           color: AppColors.secondaryColor,
@@ -50,7 +49,7 @@ class MenuList extends StatelessWidget {
             color: AppColors.secondaryColor,
           ),
         ),
-        SpaceH20(),
+        const SpaceH20(),
         Row(
           children: [
             Text(
@@ -87,7 +86,7 @@ class MenuList extends StatelessWidget {
         Menuitem(
           onTap: () {
             if (menuList[i].title == StringConst.RESUME) {
-              Functions.launchUrl(DocumentPath.CV);
+              Functions.launchUrl(DocumentPath.cv);
             } else if (menuList[i].title == StringConst.CONTACT) {
               Functions.launchUrl(StringConst.EMAIL_URL);
             } else {
@@ -99,7 +98,7 @@ class MenuList extends StatelessWidget {
               selectedItemRouteName == menuList[i].routeName ? true : false,
         ),
       );
-      menuItems.add(SpaceH4());
+      menuItems.add(const SpaceH4());
     }
     return menuItems;
   }

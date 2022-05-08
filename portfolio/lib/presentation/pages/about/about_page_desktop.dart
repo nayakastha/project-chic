@@ -387,7 +387,7 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
                       ),
                     )
                   : Container(),
-              SpaceH16(),
+              const SpaceH16(),
               AnimatedOpacity(
                 opacity: _visible ? aboutDevAnimation.value : 0.0,
                 duration: _aboutDevAnimationController.duration!,
@@ -399,7 +399,7 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
                   ),
                 ),
               ),
-              SpaceH40(),
+              const SpaceH40(),
               _isSubMenuListVisible
                   ? SubMenuList(
                       subMenuData: Data.subMenuData,

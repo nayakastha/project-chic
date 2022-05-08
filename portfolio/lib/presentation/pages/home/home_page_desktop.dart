@@ -97,7 +97,7 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                             color: AppColors.primaryColor,
                           ),
                         ),
-                        SpaceW8(),
+                        const SpaceW8(),
                         const CircularContainer(
                           width: Sizes.WIDTH_24,
                           height: Sizes.HEIGHT_24,

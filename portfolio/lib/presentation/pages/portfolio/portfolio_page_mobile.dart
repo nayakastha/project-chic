@@ -82,7 +82,7 @@ class _PortfolioPageMobileState extends State<PortfolioPageMobile>
           ),
           itemCount: Data.portfolioData.length,
           separatorBuilder: (BuildContext context, index) {
-            return SpaceH20();
+            return const SpaceH20();
           },
           itemBuilder: (BuildContext context, index) {
             double start = durationForEachPortfolio * index;

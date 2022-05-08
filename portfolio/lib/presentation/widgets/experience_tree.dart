@@ -201,7 +201,7 @@ class _ExperienceBranchState extends State<ExperienceBranch> {
                 ),
               ),
             ),
-            SpaceH8(),
+            const SpaceH8(),
             Positioned(
               width: widget.width! / 2,
               top: offsetRoleLeaf,
@@ -259,7 +259,7 @@ class LocationDateLeaf extends StatelessWidget {
               style: durationTextStyle ??
                   theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
             ),
-            SpaceW4(),
+            const SpaceW4(),
             durationIcon ??
                 const Icon(
                   Icons.access_time,
@@ -268,7 +268,7 @@ class LocationDateLeaf extends StatelessWidget {
                 ),
           ],
         ),
-        SpaceH8(),
+        const SpaceH8(),
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
@@ -277,7 +277,7 @@ class LocationDateLeaf extends StatelessWidget {
               style: locationTextStyle ??
                   theme.textTheme.bodyText2!.copyWith(color: AppColors.black),
             ),
-            SpaceW4(),
+            const SpaceW4(),
             locationIcon ??
                 const Icon(
                   Icons.location_on,
@@ -293,6 +293,7 @@ class LocationDateLeaf extends StatelessWidget {
 
 class RoleLeaf extends StatelessWidget {
   const RoleLeaf({
+    Key? key,
     required this.company,
     required this.position,
     required this.roles,
@@ -300,7 +301,7 @@ class RoleLeaf extends StatelessWidget {
     this.positionTextStyle,
     this.roleTextStyle,
     this.onTap,
-  });
+  }) : super(key: key);
 
   final String? company;
   final String? position;
@@ -332,7 +333,7 @@ class RoleLeaf extends StatelessWidget {
               theme.textTheme.subtitle2!.copyWith(
                   fontStyle: FontStyle.italic, color: AppColors.accentColor2),
         ),
-        SpaceH8(),
+        const SpaceH8(),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: _buildRoles(roles: roles!, context: context),
@@ -356,7 +357,7 @@ class RoleLeaf extends StatelessWidget {
           color: AppColors.primaryColor,
         ),
       );
-      roleWidgets.add(SpaceH8());
+      roleWidgets.add(const SpaceH8());
     }
 
     return roleWidgets;

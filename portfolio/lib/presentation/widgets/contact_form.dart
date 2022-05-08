@@ -30,7 +30,7 @@ class ContactForm extends StatelessWidget {
             hintText: StringConst.NAME_HINT_TEXT,
             controller: controllers![0],
           ),
-          SpaceH16(),
+          const SpaceH16(),
           CustomTextFormField(
             filled: true,
             fillColor: AppColors.grey100,
@@ -38,7 +38,7 @@ class ContactForm extends StatelessWidget {
             textInputType: TextInputType.phone,
             controller: controllers![1],
           ),
-          SpaceH16(),
+          const SpaceH16(),
           CustomTextFormField(
             filled: true,
             fillColor: AppColors.grey100,
@@ -46,7 +46,7 @@ class ContactForm extends StatelessWidget {
             textInputType: TextInputType.emailAddress,
             controller: controllers![2],
           ),
-          SpaceH16(),
+          const SpaceH16(),
           CustomTextFormField(
             filled: true,
             fillColor: AppColors.grey100,
@@ -73,7 +73,7 @@ class SendMessageButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    return FlatButton(
+    return TextButton(
       onPressed: onPressed,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -83,7 +83,7 @@ class SendMessageButton extends StatelessWidget {
             style:
                 theme.textTheme.headline6!.copyWith(color: AppColors.grey100),
           ),
-          SpaceW12(),
+          const SpaceW12(),
           const CircularContainer(
             child: Icon(
               Icons.send,

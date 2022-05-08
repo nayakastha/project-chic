@@ -85,7 +85,7 @@ class _MenuitemState extends State<Menuitem> with TickerProviderStateMixin {
                             color: AppColors.secondaryColor,
                           )
                         : Container(),
-                    widget.selected ? SpaceW12() : Container(),
+                    widget.selected ? const SpaceW12() : Container(),
                     FlickerTextAnimation(
                       text: widget.title,
                       textColor: AppColors.secondaryColor,
@@ -114,7 +114,7 @@ class _MenuitemState extends State<Menuitem> with TickerProviderStateMixin {
                             )
                           : null,
                     ),
-                    widget.selected ? SpaceH8() : Container(),
+                    widget.selected ? const SpaceH8() : Container(),
                     widget.selected
                         ? const HorizontalBar(
                             color: AppColors.primaryColor,
