@@ -40,7 +40,9 @@ class ExperienceSection extends StatelessWidget {
     ThemeData theme = Theme.of(context);
     return ListView(
       children: [
-        Row(
+        Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               position,
@@ -54,6 +56,7 @@ class ExperienceSection extends StatelessWidget {
               onTap: onTap ?? (() => Functions.launchUrl(companyUrl!)),
               child: Text(
                 '@' + company!,
+                maxLines: 3,
                 style: companyTextStyle ??
                     theme.textTheme.headline6!.copyWith(
                       color: AppColors.complimentColor1,

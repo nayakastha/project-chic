@@ -31,7 +31,8 @@ class ExperiencePageMobile extends StatelessWidget {
               }
             },
             bottom: TabBar(
-              tabs: _buildTabBar(Data.experienceData),
+              tabs: _buildTabBar(Data.experienceData, context),
+              isScrollable: true,
               indicatorColor: AppColors.complimentColor1,
               labelColor: AppColors.complimentColor1,
               labelPadding: const EdgeInsets.all(Sizes.PADDING_8),
@@ -41,7 +42,7 @@ class ExperiencePageMobile extends StatelessWidget {
               ),
               unselectedLabelColor: AppColors.accentColor,
               unselectedLabelStyle: theme.textTheme.bodyText1!.copyWith(
-                fontSize: Sizes.TEXT_SIZE_16,
+                fontSize: Sizes.TEXT_SIZE_12,
                 fontWeight: FontWeight.w600,
               ),
             ),
@@ -59,7 +60,8 @@ class ExperiencePageMobile extends StatelessWidget {
     );
   }
 
-  List<Widget> _buildTabBar(List<ExperienceData> experienceData) {
+  List<Widget> _buildTabBar(
+      List<ExperienceData> experienceData, BuildContext context) {
     List<Widget> tabBarItems = [];
     for (var index = 0; index < experienceData.length; index++) {
       tabBarItems.add(
@@ -92,28 +94,3 @@ class ExperiencePageMobile extends StatelessWidget {
     return tabContent;
   }
 }
-
-//      body: Container(
-//        padding: EdgeInsets.symmetric(
-//          horizontal: Sizes.PADDING_16,
-//          vertical: Sizes.PADDING_16,
-//        ),
-//        child: ListView.separated(
-//          itemCount: Data.experienceData.length,
-//          separatorBuilder: (BuildContext context, int index) {
-//            return SpaceH30();
-//          },
-//          itemBuilder: (BuildContext context, int index) {
-//            return ExperienceColumn(
-//              duration: Data.experienceData[index].duration,
-//              position: Data.experienceData[index].position,
-//              company: Data.experienceData[index].company,
-//              location: Data.experienceData[index].location,
-//              role: Data.experienceData[index].role,
-//              onTap: () {
-//                Functions.launchUrl(Data.experienceData[index].companyUrl);
-//              },
-//            );
-//          },
-//        ),
-//      )
