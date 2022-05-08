@@ -176,7 +176,7 @@ class StringConst {
   static const String COMPANY_6_ROLE_1 =
       "Flutter Festivals is a community led event series where developers can join to learn the fundamentals of Google technologies. - featuring Flutter, Firebase and Google Cloud content.";
   static const String COMPANY_6_ROLE_2 =
-      "This gave me a opportunity to teach Flutter and help students learn cross platform app development using Flutter.";
+      "This gave me an opportunity to teach Flutter and help students learn cross platform app development using Flutter.";
   static const String LOCATION_6 = "NIT Rourkela, India";
   static const String DURATION_6 = "Mar 2022 - Apr 2022";
 
@@ -186,7 +186,7 @@ class StringConst {
   static const String COMPANY_7_ROLE_1 =
       "The Career Development Centre of the Institute centrally helps in constituting the job carrier for the graduating students of all Departments";
   static const String COMPANY_7_ROLE_2 =
-      "Placement Coordinator contact the companies and invite them to campus . They are also responsible for hospitality of the company and conduct the placement drive smoothly. They act as a link between company and students. Placement Coordinator also manage the database of students and give them to company";
+      "Placement Coordinators contact the companies and invite them to campus . They are also responsible for hospitality of the company and conduct the placement drive smoothly. They act as a link between company and students. Placement Coordinators also manage the database of students and give them to company";
   static const String LOCATION_7 = "NIT Rourkela, India";
   static const String DURATION_7 = "May 2022 - Current";
 
