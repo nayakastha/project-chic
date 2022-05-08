@@ -5,8 +5,8 @@ import '../../values/values.dart';
 import 'flicker_text_animation.dart';
 import 'horizontal_bar.dart';
 
-class MenuItem extends StatefulWidget {
-  const MenuItem({
+class Menuitem extends StatefulWidget {
+  const Menuitem({
     Key? key,
     required this.title,
     this.titleStyle,
@@ -24,10 +24,10 @@ class MenuItem extends StatefulWidget {
   final GestureTapCallback? onTap;
 
   @override
-  _MenuItemState createState() => _MenuItemState();
+  _MenuitemState createState() => _MenuitemState();
 }
 
-class _MenuItemState extends State<MenuItem> with TickerProviderStateMixin {
+class _MenuitemState extends State<Menuitem> with TickerProviderStateMixin {
   bool _hovering = false;
   late AnimationController _controller;
 

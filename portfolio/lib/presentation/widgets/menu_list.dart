@@ -90,7 +90,7 @@ class MenuList extends StatelessWidget {
     List<Widget> menuItems = [];
     for (var i = 0; i < menuList.length; i++) {
       menuItems.add(
-        MenuItem(
+        Menuitem(
           onTap: () {
             if (menuList[i].title == StringConst.RESUME) {
               Functions.launchUrl(DocumentPath.CV);
