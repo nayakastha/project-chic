@@ -58,7 +58,7 @@ class _HomePageMobileState extends State<HomePageMobile> {
                                   color: AppColors.secondaryColor,
                                 ),
                               ),
-                              SpaceH8(),
+                              const SpaceH8(),
                               Text(
                                 StringConst.SPECIALITY,
                                 style: theme.textTheme.headline6!.copyWith(

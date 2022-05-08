@@ -4,7 +4,7 @@ import 'spaces.dart';
 
 // ignore: must_be_immutable
 class SubMenuItem extends StatelessWidget {
-  SubMenuItem({
+  const SubMenuItem({
     Key? key,
     required this.title,
     this.color,
@@ -34,7 +34,7 @@ class SubMenuItem extends StatelessWidget {
               thickness: thickness,
             ),
           ),
-          isSelected! ? SpaceW8() : Container(),
+          isSelected! ? const SpaceW8() : Container(),
           Text(
             title,
             style: textStyle ?? theme.textTheme.headline6!.copyWith(),

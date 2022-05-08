@@ -182,7 +182,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
                         ),
                       )
                     : Container(),
-                SpaceH16(),
+                const SpaceH16(),
                 _isContentVisible ? _fadeInContent() : Container(),
               ],
             ),

@@ -95,7 +95,7 @@ class _PortfolioCardState extends State<PortfolioCard>
     ThemeData theme = Theme.of(context);
     return InkWell(
       onTap: widget.onTap,
-      child: Container(
+      child: SizedBox(
         width: widget.width,
         height: widget.height,
         child: MouseRegion(
@@ -127,7 +127,7 @@ class _PortfolioCardState extends State<PortfolioCard>
                                     color: AppColors.secondaryColor,
                                   ),
                             ),
-                            SpaceH4(),
+                            const SpaceH4(),
                             Text(
                               widget.subtitle!,
                               textAlign: TextAlign.center,
@@ -136,7 +136,7 @@ class _PortfolioCardState extends State<PortfolioCard>
                                       color: AppColors.secondaryColor,
                                       fontSize: Sizes.TEXT_SIZE_16),
                             ),
-                            SpaceH16(),
+                            const SpaceH16(),
                             Text(
                               widget.actionTitleTextStyle as String? ??
                                   widget.actionTitle!,
@@ -144,7 +144,7 @@ class _PortfolioCardState extends State<PortfolioCard>
                               style: theme.textTheme.subtitle1!
                                   .copyWith(color: AppColors.secondaryColor),
                             ),
-                            SpaceH4(),
+                            const SpaceH4(),
                             const HorizontalBar(
                                 color: AppColors.secondaryColor),
                             const Spacer(flex: 1),

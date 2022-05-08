@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/presentation/widgets/socials.dart';
 import 'package:portfolio/presentation/widgets/spaces.dart';
 
@@ -78,7 +77,7 @@ class AppDrawer extends StatelessWidget {
               barColor: AppColors.accentColor2,
               crossAxisAlignment: CrossAxisAlignment.center,
             ),
-            SpaceH16(),
+            const SpaceH16(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -89,7 +88,7 @@ class AppDrawer extends StatelessWidget {
                     fontSize: Sizes.TEXT_SIZE_10,
                   ),
                 ),
-                SpaceW4(),
+                const SpaceW4(),
               ],
             ),
             Row(
@@ -104,7 +103,7 @@ class AppDrawer extends StatelessWidget {
                 ),
               ],
             ),
-            SpaceH16(),
+            const SpaceH16(),
           ],
         ),
       ),
@@ -121,7 +120,7 @@ class AppDrawer extends StatelessWidget {
         Menuitem(
           onTap: () {
             if (menuList[i].title == StringConst.RESUME) {
-              Functions.launchUrl(DocumentPath.CV);
+              Functions.launchUrl(DocumentPath.cv);
             } else if (menuList[i].title == StringConst.CONTACT) {
               Functions.launchUrl(StringConst.EMAIL_URL);
             } else {
@@ -134,7 +133,7 @@ class AppDrawer extends StatelessWidget {
               selectedItemRouteName == menuList[i].routeName ? true : false,
         ),
       );
-      menuItems.add(SpaceH16());
+      menuItems.add(const SpaceH16());
     }
     return menuItems;
   }

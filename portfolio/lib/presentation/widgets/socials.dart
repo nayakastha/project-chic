@@ -14,8 +14,9 @@ class Socials extends StatelessWidget {
     this.barColor = AppColors.accentColor2,
     this.alignment,
     this.crossAxisAlignment,
-  }) : assert(isHorizontal == false || isVertical == false,
-            'Both isHorizontal and isVertical cannot be true');
+  })  : assert(isHorizontal == false || isVertical == false,
+            'Both isHorizontal and isVertical cannot be true'),
+        super(key: key);
 
   final bool isVertical;
   final bool isHorizontal;
@@ -41,7 +42,7 @@ class Socials extends StatelessWidget {
               HorizontalBar(
                 width: Sizes.WIDTH_32,
                 color: barColor,
-                margin: EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
+                margin: const EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
               ),
               SocialButton(
                 icon: FontAwesomeIcons.linkedin,
@@ -54,7 +55,7 @@ class Socials extends StatelessWidget {
               HorizontalBar(
                 width: Sizes.WIDTH_32,
                 color: barColor,
-                margin: EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
+                margin: const EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
               ),
               SocialButton(
                 icon: FontAwesomeIcons.twitter,
@@ -67,7 +68,7 @@ class Socials extends StatelessWidget {
               HorizontalBar(
                 width: Sizes.WIDTH_32,
                 color: barColor,
-                margin: EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
+                margin: const EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
               ),
               SocialButton(
                 icon: FontAwesomeIcons.mediumM,
@@ -138,13 +139,14 @@ class Socials extends StatelessWidget {
 
 class SocialButton extends StatelessWidget {
   const SocialButton({
+    Key? key,
     this.padding = const EdgeInsets.all(Sizes.PADDING_0),
     this.onPressed,
     this.color = AppColors.accentColor2,
     this.icon = FontAwesomeIcons.twitter,
     this.iconSize = Sizes.ICON_SIZE_24,
     this.alignment = Alignment.center,
-  });
+  }) : super(key: key);
 
   final EdgeInsetsGeometry padding;
   final VoidCallback? onPressed;
