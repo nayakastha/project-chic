@@ -105,7 +105,7 @@ class _BottomDraggableScrollableSheetState
                       isEducationSelected
                           ? Text(
                               StringConst.ABOUT_DEV_TEXT,
-                              style: theme.textTheme.bodyText2!.copyWith(
+                              style: theme.textTheme.bodyText1!.copyWith(
                                 color: AppColors.secondaryColor,
                                 fontSize: Sizes.TEXT_SIZE_16,
                               ),

@@ -41,9 +41,9 @@ class StringConst {
   static const String DEV_NAME = "Astha Nayak";
   static const String PUNCH_LINE = "I build AWESOME stuff with technology";
   static const String SPECIALITY = "SOFTWARE DEVELOPER";
-  static const String DESIGNED_IN = "Made in India with ";
+  static const String DESIGNED_IN = "Designed and Coded by Astha Nayak";
   static const String DESIGNED_BY = "Designed with passion ";
-  static const String BUILT_BY = "Built by Astha Nayak ";
+  static const String BUILT_BY = "with 💖, 🍵 and a very tolerant 💻 ";
 
   static const String ABOUT_DEV_TEXT =
       "I'm a pre-final year student residing in India, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience. I am a Software Engineer & open-source enthusiast with a passion for building beautiful & high-performance apps. Deep expertise in modern software engineering including Web & Mobile Apps Development, Devops, Cloud Computing, and API integrations. ";

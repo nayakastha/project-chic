@@ -33,23 +33,21 @@ class ProjectCover extends StatelessWidget {
       height: height,
       child: Stack(
         children: [
+          // Positioned(
+          //   top: offset,
+          //   right: offset,
+          //   child: Transform.scale(
+          //     scale: backgroundScale,
+          //     origin: origin,
+          //     alignment: alignment,
+          //     child: Container(
+          //       width: width! - offset!,
+          //       height: height! - offset!,
+          //       color: projectCoverBackgroundColor,
+          //     ),
+          //   ),
+          // ),
           Positioned(
-            top: offset,
-            right: offset,
-            child: Transform.scale(
-              scale: backgroundScale,
-              origin: origin,
-              alignment: alignment,
-              child: Container(
-                width: width! - offset!,
-                height: height! - offset!,
-                color: projectCoverBackgroundColor,
-              ),
-            ),
-          ),
-          Positioned(
-            left: offset,
-            bottom: offset,
             child: Transform.scale(
               scale: projectCoverScale,
               origin: origin,

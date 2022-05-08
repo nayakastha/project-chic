@@ -18,7 +18,7 @@ class ExperiencePageMobile extends StatelessWidget {
       length: Data.experienceData.length,
       child: Scaffold(
         key: _scaffoldKey,
-        backgroundColor: AppColors.deepBlue700,
+        backgroundColor: AppColors.secondaryColor,
         appBar: PreferredSize(
           preferredSize: const Size.fromHeight(100.0),
           child: CustomAppBar(
@@ -33,8 +33,8 @@ class ExperiencePageMobile extends StatelessWidget {
             bottom: TabBar(
               tabs: _buildTabBar(Data.experienceData, context),
               isScrollable: true,
-              indicatorColor: AppColors.complimentColor1,
-              labelColor: AppColors.complimentColor1,
+              indicatorColor: AppColors.secondaryColor,
+              labelColor: AppColors.secondaryColor,
               labelPadding: const EdgeInsets.all(Sizes.PADDING_8),
               labelStyle: theme.textTheme.headline6!.copyWith(
                 fontSize: Sizes.TEXT_SIZE_16,

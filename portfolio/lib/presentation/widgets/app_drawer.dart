@@ -90,11 +90,6 @@ class AppDrawer extends StatelessWidget {
                   ),
                 ),
                 SpaceW4(),
-                const Icon(
-                  FontAwesomeIcons.solidHeart,
-                  color: Colors.red,
-                  size: Sizes.ICON_SIZE_10,
-                )
               ],
             ),
             Row(
@@ -104,7 +99,7 @@ class AppDrawer extends StatelessWidget {
                   StringConst.BUILT_BY,
                   style: theme.textTheme.bodyText1!.copyWith(
                     color: AppColors.accentColor2,
-                    fontSize: Sizes.TEXT_SIZE_8,
+                    fontSize: Sizes.TEXT_SIZE_10,
                   ),
                 ),
               ],

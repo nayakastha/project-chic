@@ -60,12 +60,6 @@ class MenuList extends StatelessWidget {
                 fontSize: Sizes.TEXT_SIZE_10,
               ),
             ),
-            SpaceW4(),
-            const Icon(
-              FontAwesomeIcons.solidHeart,
-              color: Colors.red,
-              size: Sizes.ICON_SIZE_10,
-            )
           ],
         ),
         Wrap(
@@ -74,7 +68,7 @@ class MenuList extends StatelessWidget {
               StringConst.BUILT_BY,
               style: theme.textTheme.bodyText1!.copyWith(
                 color: AppColors.secondaryColor,
-                fontSize: Sizes.TEXT_SIZE_10,
+                fontSize: Sizes.TEXT_SIZE_12,
               ),
             ),
           ],
