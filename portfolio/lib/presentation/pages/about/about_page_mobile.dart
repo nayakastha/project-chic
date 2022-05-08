@@ -187,7 +187,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
               ],
             ),
           ),
-          //_isContentVisible ? _fadeInImage() : Container(),
+          _isContentVisible ? _fadeInImage() : Container(),
           const BottomDraggableScrollableSheet(),
         ],
       ),
@@ -200,7 +200,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
       child: Image.asset(
         ImagePath.DEV,
         height: heightOfScreen(context),
-        fit: BoxFit.cover,
+        fit: BoxFit.contain,
       ),
       builder: (BuildContext context, Widget? child) {
         return Positioned(
