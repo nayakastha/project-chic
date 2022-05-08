@@ -163,9 +163,9 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
         child: CustomAppBar(
           title: widget.projectDetails!.projectName,
           actionIcon: const Icon(
-            Icons.arrow_back_ios,
+            Icons.arrow_back,
             color: AppColors.accentColor2,
-            size: Sizes.ICON_SIZE_20,
+            size: Sizes.ICON_SIZE_24,
           ),
           onLeadingPressed: () {
             if (_scaffoldKey.currentState!.isEndDrawerOpen) {
@@ -199,7 +199,7 @@ class _ProjectDetailMobileState extends State<ProjectDetailMobile>
       children: [
         ProjectCover(
           width: widthOfScreen(context),
-          height: assignHeight(context: context, fraction: 0.4),
+          height: assignHeight(context: context, fraction: 0.6),
           offset: 20,
           projectCoverScale: _projectCoverScaleAnimation.value,
           backgroundScale: _projectBackgroundScaleAnimation.value,

@@ -48,7 +48,7 @@ class ExperienceSection extends StatelessWidget {
               position,
               style: positionTextStyle ??
                   theme.textTheme.headline6!.copyWith(
-                    color: AppColors.complimentColor2,
+                    color: AppColors.primaryColor,
                   ),
             ),
             SpaceW4(),
@@ -59,7 +59,7 @@ class ExperienceSection extends StatelessWidget {
                 maxLines: 3,
                 style: companyTextStyle ??
                     theme.textTheme.headline6!.copyWith(
-                      color: AppColors.complimentColor1,
+                      color: AppColors.deepBlue250,
                     ),
               ),
             )
@@ -105,7 +105,7 @@ class Role extends StatelessWidget {
     required this.role,
     this.roleTextStyle,
     this.icon = Icons.arrow_right,
-    this.color = AppColors.complimentColor1,
+    this.color = AppColors.primaryColor,
     this.iconSize = Sizes.ICON_SIZE_18,
   }) : super(key: key);
 
@@ -131,7 +131,7 @@ class Role extends StatelessWidget {
             role,
             style: roleTextStyle ??
                 theme.textTheme.bodyText1!.copyWith(
-                  color: AppColors.accentColor3,
+                  color: AppColors.accentColor2,
                 ),
           ),
         ),
