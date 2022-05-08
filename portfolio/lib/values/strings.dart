@@ -46,7 +46,7 @@ class StringConst {
   static const String BUILT_BY = "with 💖, 🍵 and a very tolerant 💻 ";
 
   static const String ABOUT_DEV_TEXT =
-      "I'm a pre-final year student residing in India, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience. I am a Software Engineer & open-source enthusiast with a passion for building beautiful & high-performance apps. Deep expertise in modern software engineering including Web & Mobile Apps Development, Devops, Cloud Computing, and API integrations. ";
+      "I'm a final year student residing in India, specializing in building high quality mobile and web applications with a strong passion for opensource work. My goal is to always build pixel perfect high performant applications that provides users with a rich experience. I am a Software Engineer & open-source enthusiast with a passion for building beautiful & high-performance apps. Deep expertise in modern software engineering including Web & Mobile Apps Development, Devops, Cloud Computing, and API integrations. ";
 
   static const String EDUCATION_TEXT =
       "I am self taught programmer who is pursuing Bachelors in Computer Science Engineering at National Institute of Technology Rourkela, India. I love learning and writing computer programs. I am an alumni of KIIT International Institute of Technology, Bhubaneswar, India (Batch of 2019) and Delhi Public School, Nalco Nagar (Batch of 2017)";
