@@ -8,7 +8,6 @@ import '../../widgets/circular_container.dart';
 import '../../widgets/content_wrapper.dart';
 import '../../widgets/socials.dart';
 import '../../widgets/spaces.dart';
-import '../portfolio/portfolio_page.dart';
 import 'home_page.dart';
 
 class HomePageMobile extends StatefulWidget {
