@@ -7,8 +7,6 @@ import '../../widgets/flicker_text_animation.dart';
 import '../../widgets/menu_list.dart';
 import '../../widgets/spaces.dart';
 import '../../widgets/sub_menu_list.dart';
-import '../../widgets/trailing_info.dart';
-import '../portfolio/portfolio_page.dart';
 import 'about_page.dart';
 
 class AboutPageDesktop extends StatefulWidget {

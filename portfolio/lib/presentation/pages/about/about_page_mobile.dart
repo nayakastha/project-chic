@@ -187,34 +187,34 @@ class _AboutPageMobileState extends State<AboutPageMobile>
               ],
             ),
           ),
-          _isContentVisible ? _fadeInImage() : Container(),
+          // _isContentVisible ? _fadeInImage() : Container(),
           const BottomDraggableScrollableSheet(),
         ],
       ),
     );
   }
 
-  Widget _fadeInImage() {
-    return AnimatedBuilder(
-      animation: _controller,
-      child: Image.asset(
-        ImagePath.DEV,
-        height: heightOfScreen(context),
-        fit: BoxFit.contain,
-      ),
-      builder: (BuildContext context, Widget? child) {
-        return Positioned(
-          right: widthOfScreen(context) > 450
-              ? -assignWidth(context: context, fraction: 0.2)
-              : -assignWidth(context: context, fraction: 0.7),
-          child: FadeTransition(
-            opacity: opacityAnimation,
-            child: child,
-          ),
-        );
-      },
-    );
-  }
+  // Widget _fadeInImage() {
+  //   return AnimatedBuilder(
+  //     animation: _controller,
+  //     child: Image.asset(
+  //       ImagePath.DEV,
+  //       height: heightOfScreen(context),
+  //       fit: BoxFit.contain,
+  //     ),
+  //     builder: (BuildContext context, Widget? child) {
+  //       return Positioned(
+  //         right: widthOfScreen(context) > 450
+  //             ? -assignWidth(context: context, fraction: 0.2)
+  //             : -assignWidth(context: context, fraction: 0.7),
+  //         child: FadeTransition(
+  //           opacity: opacityAnimation,
+  //           child: child,
+  //         ),
+  //       );
+  //     },
+  //   );
+  // }
 
   Widget _fadeInContent() {
     ThemeData theme = Theme.of(context);
@@ -230,7 +230,7 @@ class _AboutPageMobileState extends State<AboutPageMobile>
           child: Row(
             children: [
               SizedBox(
-                width: assignWidth(context: context, fraction: 0.4),
+                width: assignWidth(context: context, fraction: 0.9),
                 child: child,
               ),
             ],
