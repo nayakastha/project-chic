@@ -81,7 +81,7 @@ class _MenuitemState extends State<Menuitem> with TickerProviderStateMixin {
                     widget.selected
                         ? Container(
                             width: 2,
-                            height: 18,
+                            height: 24,
                             color: AppColors.secondaryColor,
                           )
                         : Container(),
@@ -93,7 +93,7 @@ class _MenuitemState extends State<Menuitem> with TickerProviderStateMixin {
                       controller: _controller.view,
                       textStyle: !widget.selected
                           ? theme.textTheme.bodyText1!
-                              .copyWith(fontSize: Sizes.TEXT_SIZE_16)
+                              .copyWith(fontSize: Sizes.TEXT_SIZE_18)
                           : null,
                     ),
                   ],

@@ -14,6 +14,7 @@ class Socials extends StatelessWidget {
     this.barColor = AppColors.accentColor2,
     this.alignment,
     this.crossAxisAlignment,
+    this.mainAxisAlignment,
   })  : assert(isHorizontal == false || isVertical == false,
             'Both isHorizontal and isVertical cannot be true'),
         super(key: key);
@@ -24,6 +25,7 @@ class Socials extends StatelessWidget {
   final Color barColor;
   final Alignment? alignment;
   final CrossAxisAlignment? crossAxisAlignment;
+  final MainAxisAlignment? mainAxisAlignment;
 
   @override
   Widget build(BuildContext context) {
@@ -82,7 +84,7 @@ class Socials extends StatelessWidget {
           )
         : IntrinsicHeight(
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: mainAxisAlignment!,
               children: [
                 SocialButton(
                   icon: FontAwesomeIcons.github,
@@ -124,10 +126,10 @@ class Socials extends StatelessWidget {
                   color: barColor,
                 ),
                 SocialButton(
-                  icon: FontAwesomeIcons.telegramPlane,
+                  icon: FontAwesomeIcons.mediumM,
                   alignment: alignment,
                   onPressed: () {
-                    Functions.launchUrl(StringConst.TELEGRAM_URL);
+                    Functions.launchUrl(StringConst.MEDIUM_URL);
                   },
                   color: color,
                 ),
