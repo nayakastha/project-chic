@@ -22,20 +22,11 @@ class MenuList extends StatelessWidget {
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: <Widget>[
         ..._buildMenuList(menuList: menuList, context: context),
         const Spacer(
-          flex: 1,
-        ),
-        const Socials(
-          isVertical: true,
-          alignment: Alignment.centerLeft,
-          color: AppColors.secondaryColor,
-          barColor: AppColors.secondaryColor,
-          crossAxisAlignment: CrossAxisAlignment.start,
-        ),
-        const Spacer(
-          flex: 1,
+          flex: 20,
         ),
         Text(
           StringConst.DEV_NAME,
@@ -49,9 +40,20 @@ class MenuList extends StatelessWidget {
             color: AppColors.secondaryColor,
           ),
         ),
-        const SpaceH20(),
+        const Socials(
+          isHorizontal: true,
+          alignment: Alignment.center,
+          color: AppColors.secondaryColor,
+          barColor: AppColors.secondaryColor,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
+        ),
+        const Spacer(
+          flex: 1,
+        ),
         Row(
           children: [
+            const SpaceH2(),
             Text(
               StringConst.DESIGNED_IN,
               style: theme.textTheme.bodyText1!.copyWith(
@@ -63,6 +65,7 @@ class MenuList extends StatelessWidget {
         ),
         Wrap(
           children: [
+            const SpaceH2(),
             Text(
               StringConst.BUILT_BY,
               style: theme.textTheme.bodyText1!.copyWith(

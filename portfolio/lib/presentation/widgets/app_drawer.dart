@@ -76,6 +76,7 @@ class AppDrawer extends StatelessWidget {
               alignment: Alignment.center,
               barColor: AppColors.accentColor2,
               crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
             ),
             const SpaceH16(),
             Row(
