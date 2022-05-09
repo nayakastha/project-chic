@@ -21,26 +21,6 @@ class HomePageDesktop extends StatefulWidget {
 }
 
 class _HomePageDesktopState extends State<HomePageDesktop> {
-//  GlobalKey imageKey = GlobalKey();
-//  double offsetRoleLeaf;
-//
-//  @override
-//  void initState() {
-//    WidgetsBinding.instance.addPostFrameCallback((_) {
-//      _getSizeOfImage();
-//    });
-//    super.initState();
-//  }
-//
-//  _getSizeOfImage() {
-//    final RenderBox imageRenderBox = imageKey.currentContext.findRenderObject();
-//    final imageSize = imageRenderBox.size.height;
-//    setState(() {
-//      print("Size ${imageRenderBox.size}");
-//      offsetRoleLeaf = 0;
-//    });
-//  }
-
   Future<ui.Image> _getImage() {
     Completer<ui.Image> completer = Completer<ui.Image>();
     const AssetImage(ImagePath.DEV)
@@ -110,33 +90,6 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                         )
                       ],
                     ),
-                    // onTrailingWidgetPressed: () {
-                    //   Navigator.pushNamed(
-                    //     context,
-                    //     PortfolioPage.portfolioPageRoute,
-                    //   );
-                    // },
-                    // trailingWidget: Row(
-                    //   mainAxisAlignment: MainAxisAlignment.end,
-                    //   children: [
-                    //     Text(
-                    //       StringConst.VIEW_PORTFOLIO,
-                    //       style: theme.textTheme.bodyText1!.copyWith(
-                    //         color: AppColors.primaryColor,
-                    //       ),
-                    //     ),
-                    //     SpaceW8(),
-                    //     const CircularContainer(
-                    //       color: AppColors.primaryColor,
-                    //       width: Sizes.WIDTH_24,
-                    //       height: Sizes.HEIGHT_24,
-                    //       child: Icon(
-                    //         Icons.chevron_right,
-                    //         color: AppColors.secondaryColor,
-                    //       ),
-                    //     )
-                    //   ],
-                    // ),
                   ),
                 ),
               ],
@@ -183,19 +136,3 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
     );
   }
 }
-
-//          Positioned(
-////            key: imageKey,
-//            top: assignHeight(context: context, fraction: 0.0),
-//            left: assignWidth(context: context, fraction: 0.5) - 600 / 2,
-//            child: Container(
-////              color: Colors.red,
-//              child: Image.asset(
-//                ImagePath.DEV,
-//                width: 600,
-//                height: assignHeight(context: context, fraction: 1),
-//                fit: BoxFit.cover,
-//                scale: 2.0,
-//              ),
-//            ),
-//          ),

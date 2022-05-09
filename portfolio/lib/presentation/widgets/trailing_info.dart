@@ -80,16 +80,7 @@ class TrailingInfo extends StatelessWidget {
           spacingWidget ?? const Spacer(flex: 1),
           InkWell(
             onTap: onTrailingWidgetPressed,
-            child: trailingWidget ??
-                const CircularContainer(
-                  color: AppColors.primaryColor,
-                  width: Sizes.WIDTH_30,
-                  height: Sizes.HEIGHT_30,
-                  child: Icon(
-                    Icons.chevron_right,
-                    color: AppColors.secondaryColor,
-                  ),
-                ),
+            child: trailingWidget ?? Container(),
           ),
         ],
       ),

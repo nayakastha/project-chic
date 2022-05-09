@@ -291,13 +291,6 @@ class _AboutPageDesktopState extends State<AboutPageDesktop>
                           fraction: 0.025,
                         ),
                       ),
-                      TrailingInfo(
-                        width: assignWidth(context: context, fraction: 0.075),
-                        onTrailingWidgetPressed: () => Navigator.pushNamed(
-                          context,
-                          PortfolioPage.portfolioPageRoute,
-                        ),
-                      ),
                     ],
                   ),
                 )

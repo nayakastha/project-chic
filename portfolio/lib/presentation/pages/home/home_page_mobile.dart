@@ -69,42 +69,6 @@ class _HomePageMobileState extends State<HomePageMobile> {
                           ),
                         ),
                         const Spacer(flex: 1),
-                        // InkWell(
-                        //   onTap: () {
-                        //     Navigator.pushNamed(
-                        //       context,
-                        //       PortfolioPage.portfolioPageRoute,
-                        //     );
-                        //   },
-                        //   child: Container(
-                        //     padding: const EdgeInsets.only(left: 24.0),
-                        //     child: Column(
-                        //       children: [
-                        //         RotatedBox(
-                        //           quarterTurns: 3,
-                        //           child: Text(
-                        //             StringConst.VIEW_PORTFOLIO,
-                        //             textAlign: TextAlign.end,
-                        //             style: theme.textTheme.bodyText1!.copyWith(
-                        //               color: AppColors.secondaryColor,
-                        //               fontSize: Sizes.TEXT_SIZE_18,
-                        //             ),
-                        //           ),
-                        //         ),
-                        //         SpaceH12(),
-                        //         const CircularContainer(
-                        //           width: Sizes.WIDTH_24,
-                        //           height: Sizes.HEIGHT_24,
-                        //           color: AppColors.secondaryColor,
-                        //           child: Icon(
-                        //             Icons.keyboard_arrow_down,
-                        //             color: AppColors.primaryColor,
-                        //           ),
-                        //         ),
-                        //       ],
-                        //     ),
-                        //   ),
-                        // ),
                         SizedBox(
                           height: assignHeight(
                             context: context,

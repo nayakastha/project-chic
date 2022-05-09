@@ -32,7 +32,7 @@ class StringConst {
   static const String EXPERIENCE_2 = "EXPERIENCE";
   static const String EDUCATION = "EDUCATION";
 
-  static const String SEND_ME_A_MESSAGE = "Send me a message";
+  static const String SEND_ME_A_MESSAGE = "Let's get in touch";
   static const String VIEW_PORTFOLIO = "View Portfolio";
 
   static const String PROJECT_NAME = "Project Name";
