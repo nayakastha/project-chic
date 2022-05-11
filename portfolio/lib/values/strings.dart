@@ -22,6 +22,7 @@ class StringConst {
 
   static const String MESSAGE_ME = "Message me";
   static const String GET_IN_TOUCH = "Get in touch";
+  static const String SWIPE_UP = "Swipe Up";
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH = "Built with ";
