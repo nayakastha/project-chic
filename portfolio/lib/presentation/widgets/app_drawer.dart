@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/presentation/widgets/socials.dart';
+
 import 'package:portfolio/presentation/widgets/spaces.dart';
 
 import '../../core/layout/adaptive.dart';
@@ -70,14 +70,6 @@ class AppDrawer extends StatelessWidget {
               ],
             ),
             const Spacer(flex: 1),
-            const Socials(
-              isHorizontal: true,
-              color: AppColors.accentColor2,
-              alignment: Alignment.center,
-              barColor: AppColors.accentColor2,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-            ),
             const SpaceH16(),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -86,7 +78,7 @@ class AppDrawer extends StatelessWidget {
                   StringConst.DESIGNED_IN,
                   style: theme.textTheme.bodyText1!.copyWith(
                     color: AppColors.accentColor2,
-                    fontSize: Sizes.TEXT_SIZE_10,
+                    fontSize: Sizes.TEXT_SIZE_12,
                   ),
                 ),
                 const SpaceW4(),
@@ -99,7 +91,7 @@ class AppDrawer extends StatelessWidget {
                   StringConst.BUILT_BY,
                   style: theme.textTheme.bodyText1!.copyWith(
                     color: AppColors.accentColor2,
-                    fontSize: Sizes.TEXT_SIZE_10,
+                    fontSize: Sizes.TEXT_SIZE_12,
                   ),
                 ),
               ],

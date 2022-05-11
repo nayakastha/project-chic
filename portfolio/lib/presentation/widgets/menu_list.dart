@@ -26,7 +26,7 @@ class MenuList extends StatelessWidget {
       children: <Widget>[
         ..._buildMenuList(menuList: menuList, context: context),
         const Spacer(
-          flex: 20,
+          flex: 50,
         ),
         Text(
           StringConst.DEV_NAME,
@@ -42,6 +42,7 @@ class MenuList extends StatelessWidget {
         ),
         const Socials(
           isHorizontal: true,
+          showResume: false,
           alignment: Alignment.center,
           color: AppColors.secondaryColor,
           barColor: AppColors.secondaryColor,

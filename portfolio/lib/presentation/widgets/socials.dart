@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../../core/utils/functions.dart';
 import '../../values/values.dart';
 import 'horizontal_bar.dart';
@@ -10,6 +9,7 @@ class Socials extends StatelessWidget {
     Key? key,
     this.isVertical = false,
     this.isHorizontal = false,
+    this.showResume,
     this.color = AppColors.accentColor2,
     this.barColor = AppColors.accentColor2,
     this.alignment,
@@ -21,6 +21,7 @@ class Socials extends StatelessWidget {
 
   final bool isVertical;
   final bool isHorizontal;
+  final bool? showResume;
   final Color color;
   final Color barColor;
   final Alignment? alignment;
@@ -133,6 +134,23 @@ class Socials extends StatelessWidget {
                   },
                   color: color,
                 ),
+                showResume!
+                    ? VerticalDivider(
+                        width: Sizes.WIDTH_8,
+                        thickness: 2,
+                        color: barColor,
+                      )
+                    : Container(),
+                showResume!
+                    ? SocialButton(
+                        icon: FontAwesomeIcons.solidFileAlt,
+                        alignment: alignment,
+                        onPressed: () {
+                          Functions.launchUrl(DocumentPath.cv);
+                        },
+                        color: color,
+                      )
+                    : Container(),
               ],
             ),
           );
