@@ -38,7 +38,7 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
-    double widthOfImage = assignWidth(context: context, fraction: 0.4);
+    double widthOfImage = assignWidth(context: context, fraction: 0.35);
 
     return Stack(
       children: <Widget>[
@@ -111,8 +111,8 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                         ImagePath.DEV,
                         width: (image.width + 100.0),
                         height: assignHeight(context: context, fraction: 1.0),
-                        fit: BoxFit.cover,
-                        scale: 3.0,
+                        fit: BoxFit.contain,
+                        scale: 1.0,
                       ),
                     );
                   } else {
