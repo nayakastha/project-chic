@@ -189,6 +189,16 @@ class StringConst {
       "Placement Coordinators contact the companies and invite them to campus . They are also responsible for hospitality of the company and conduct the placement drive smoothly. They act as a link between company and students. Placement Coordinators also manage the database of students and give them to company";
   static const String LOCATION_7 = "NIT Rourkela, India";
   static const String DURATION_7 = "May 2022 - Current";
+  static const String COMPANY_8 = "Atlassian";
+  static const String COMPANY_8_URL =
+      "https://www.linkedin.com/posts/astha-nayak_internship-softwareengineering-grateful-activity-6849985857437347840-QHDS";
+  static const String POSITION_8 = "Software Engineer Intern";
+  static const String COMPANY_8_ROLE_1 =
+      "Worked in cohort with the Data Engineering Team on a worldwide Data Lake. Used Spring Boot, Kotlin, Python and Scala for a multi dimensional project that was fully scalable, serving to millions of users";
+  static const String COMPANY_8_ROLE_2 =
+      "Brainstormed and facilitated the development of the data migration pipeline in accordance with the existing data definitions. Emphasised on the reliability and consistency of the transformation phase in ETL data pipeline";
+  static const String LOCATION_8 = "Bengaluru, India";
+  static const String DURATION_8 = "May 2022 - July 2022";
 
   //Portfolio, Projects
   static const String PROJECT_1 = "Institute Counselling Services App";
